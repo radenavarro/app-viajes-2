@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-miniatura{
+    width: 256px;
+    height: 192px;
+    background-color: #0b2e13;
+}
