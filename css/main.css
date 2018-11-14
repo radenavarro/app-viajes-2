@@ -8,9 +8,6 @@
     background-color: #0b2e13;
 }
 
-
-
-
 /* SECCION DE CONTACTO */
 .lineaContacto{
     background-color: #fafafa;
@@ -39,13 +36,16 @@ footer{
     background-color: #141939;
     color: white;
     margin-top: 25px;
+    position: absolute;
+    bottom: revert;
+
 }
 .horario{
     font-size: xx-small;
 }
 .seccionFooter{
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .margenAyuda{
     margin-left: 15px;
@@ -53,8 +53,21 @@ footer{
 .barraFooter{
     border-top: 1px solid black;
 }
-
 .derechosReservados{
     margin-top: 5px;
     margin-bottom: 20px;
+}
+.enviarMensaje{
+    background-color: #FEF200;
+    margin-top: -4vh;
+    margin-left: 50%;
+    font-size: 1.3vw;
+    color: black;
+    border-radius: 0;
+}
+.raya{
+    background-color: cornflowerblue;
+    height: 0.1vh;
+    margin-left: 15px;
+    width: 25px;
 }

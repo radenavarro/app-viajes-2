@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
         <!--ENCABEZADO-->
         <header class="row">
             <div class="row w-100">
@@ -108,32 +108,35 @@
                     <p class="col-8">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days</p>
                     <br><br><br>
                     <a class="col-12">We are open from 8.30 AM - 4.00 PM week days.</a>
-                    <br><br><hr>
+                    <br>
+                    <hr class="raya"/>
+
                 </div>
                 <div class="row">
-                    <input type="text" class="col-4 name"><input type="text" class="col-4 email">
-                </div>
-                <br>
-                <div class="row">
-                    <input type="text" class="col-4 phone"><input type="text" class="col-4 country">
+                    <input type="text" class="col-4 name" placeholder="Name*"><input type="text" class="col-4 email" placeholder="Email*">
                 </div>
                 <br>
                 <div class="row">
-                    <textarea class="col-8 message"></textarea>
+                    <input type="text" class="col-4 phone" placeholder="Phone"><input type="text" class="col-4 country" placeholder="Country">
+                </div>
+                <br>
+                <div class="row">
+                    <textarea class="col-8 message" placeholder="Message"></textarea>
                 </div>
                 <a class="pleaseComplete">* PLEASE COMPLETE ALL FIELDS CORRECTLY </a>
             </form>
         </section>
-
+        <button type="submit" class="btn btn-warning enviarMensaje"><i>Enviar mensaje</i></button>
         <!--FOOTER-->
-        <footer class="row">
-            <div class="row col-sm-12">
+        <footer class="container-fluid ">
+            <div class="row">
                 <div class="col-sm-2"></div>
             </div>
             <div class="row seccionFooter">
+                <div class="col-1"></div>
                 <div class="col-4">
                     <h3>¿Necesitas ayuda?</h3><br>
-                    <a class="margenAyuda">0234 123 4567</a>
+                    <a class="margenAyuda">0234 123 4567</a><br>
                     <a class="margenAyuda">enquiry@geekshubstravels.com</a><br>
                     <a class="horario">Lun-Vie: 9.30-19.00 Sab: 10.00-14.00</a>
                 </div>
@@ -147,9 +150,9 @@
                     <a>Contacto</a><br>
                     <a>Programa de puntos</a>
                 </div>
-                <div class="col-5">
+                <div class="col-4">
                     <h3>Suscríbete a la newsletter</h3><br>
-                    <input type="text"><br><br>
+                    <input type="text" placeholder="Correo electrónico"><br><br>
                     <button type="button" class="btn btn-warning">SUSCRIBETE</button>
                 </div>
             </div>
