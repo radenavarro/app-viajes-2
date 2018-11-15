@@ -1,0 +1,17 @@
+{
+  "name": "Agencia_de_viajes",
+  "homepage": "https://github.com/Rauldel2/app-viajes-2",
+  "authors": [
+    "Raul de la Paz <rauldelapaznavarro@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

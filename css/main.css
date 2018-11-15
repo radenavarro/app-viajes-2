@@ -1,7 +1,153 @@
+/* ==== GENERAL ==== */
 *{
     margin: 0;
     padding: 0;
 }
+
+/*Scroll al hacer click en las anclas*/
+html{
+    scroll-behavior: smooth;
+}
+
+/* ==== Pantalla menú ==== */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+header>div:last-child{
+    /*height: 60vh;*/
+}
+
+header>div:first-child{
+    height: 14vh;
+}
+
+.nav-menu .logo{
+    background-image: url("../img/iconoweb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 12vh;
+}
+
+.nav-menu .background-menu{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav-menu .background-logo{
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 89%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.8) 0%,rgba(246,246,246,0.8) 89%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(246,246,246,0.8) 89%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+.nav-menu .background-menu a:link, .nav-menu .background-menu a:visited{
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    transition: text-shadow 0.4s;
+}
+
+.nav-menu .background-menu a:hover, .nav-menu .background-menu a:active{
+    color: white;
+    border: none;
+    text-shadow: 0 0 0.2em #EA7B5D, 0 0 0.4em #EA7B5D, 0 0 0.8em #EA7B5D, 0 0 1.6em #EA7B5D;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: text-shadow 0.4s;
+}
+
+.cabecera>*{
+    color: white;
+}
+
+.cabecera h1{
+    font-size: 4em;
+}
+
+.cabecera h3{
+    font-weight: normal;
+}
+
+.cabecera button{
+    color: black;
+}
+
+/* Sprites */
+
+.iconos-social{
+    background-size: 192px;
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+}
+.sprite-social #iconoTwitter{
+    background-image: url("../img/sprite_social.png");
+    background-position: 0px 32px;
+}
+
+.sprite-social #iconoTwitter:hover{
+    background-image: url("../img/sprite_social.png");
+    background-position: 0px 0px;
+}
+
+.sprite-social #iconoWhatsapp{
+    background-image: url("../img/sprite_social.png");
+    background-position: -32px 32px;
+}
+
+.sprite-social #iconoWhatsapp:hover{
+    background-image: url("../img/sprite_social.png");
+    background-position: -32px 0px;
+}
+
+.sprite-social #iconoFacebook{
+    background-image: url("../img/sprite_social.png");
+    background-position: -64px 32px;
+}
+
+.sprite-social #iconoFacebook:hover{
+    background-image: url("../img/sprite_social.png");
+    background-position: -64px 0px;
+}
+
+.sprite-social #iconoInstagram{
+    background-image: url("../img/sprite_social.png");
+    background-position: -96px 32px;
+}
+
+.sprite-social #iconoInstagram:hover{
+    background-image: url("../img/sprite_social.png");
+    background-position: -96px 0px;
+}
+
+.sprite-social #iconoLinkedin{
+    background-image: url("../img/sprite_social.png");
+    background-position: -128px 32px;
+}
+
+.sprite-social #iconoLinkedin:hover{
+    background-image: url("../img/sprite_social.png");
+    background-position: -128px 0px;
+}
+
+.sprite-social #iconoYoutube{
+    background-image: url("../img/sprite_social.png");
+    background-position: -160px 32px;
+}
+
+.sprite-social #iconoYoutube:hover{
+    background-image: url("../img/sprite_social.png");
+    background-position: -160px 0px;
+}
+
+/*==== Destinos ====*/
+
 .img-miniatura{
     width: 100%;
     max-height: 192px;
@@ -13,7 +159,7 @@
 .img-container{
     position: relative;
     width: 256px;
-    height: 192px;
+    height: 256px;
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 2rem;
@@ -37,6 +183,11 @@
     font-weight: bold;
 }
 
+.img-lugar{
+    text-align: center;
+    font-weight: bold;
+}
+
 #beijing{
     background-image: url("../img/beijing.JPG");
 }
@@ -54,4 +205,32 @@
 }
 #tokyo{
     background-image: url("../img/tokyo.JPG");
+}
+
+/*.sprite-social{*/
+    /*!*width: 20%;*!*/
+    /*background-size: 200%;*/
+    /*background-image: url("../img/sprite_social.png");*/
+    /*background-position: 0 0;*/
+/*}*/
+
+/*.iconos-social{*/
+    /*width: ;*/
+/*}*/
+
+/* ==== Quienes somos ==== */
+
+#quienes-somos{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/travel_1.jpg");
+    background-size: cover;
+}
+
+#quienes-somos .quienes-somos-contenido hr{
+    border-color: yellow;
+}
+
+#descubrir{
+    color: yellow;
 }
