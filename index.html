@@ -10,98 +10,109 @@
 <body>
     <div class="container-fluid p-0 m-0">
         <!--ENCABEZADO-->
-        <header class="row">
-            <div class="row w-100">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-2"></div>
-                <nav class="nav-menu col-sm-3">
-                    <button class="btn btn-outline-secondary">Destinos</button>
-                    <button class="btn btn-outline-secondary">Quienes somos</button>
-                    <button class="btn btn-outline-secondary">Contacto</button>
-                </nav>
-                <div class="col-sm-2"></div>
-                <nav class="nav-social col-sm-3">
-                    <div class="row">
-                        <div class="iconos-social col-sm-2" id="iconoTwitter"></div>
-                        <div class="iconos-social col-sm-2" id="iconoWhatsapp"></div>
-                        <div class="iconos-social col-sm-2" id="iconoFacebook"></div>
-                        <div class="iconos-social col-sm-2" id="iconoInstagram"></div>
-                        <div class="iconos-social col-sm-2" id="iconoLinkedin"></div>
-                        <div class="iconos-social col-sm-2" id="iconoYoutube"></div>
+        <header class="container-fluid">
+            <nav class="row nav-menu fixed-top">
+                <div class="col-4">
+                    <div class="row background-logo">
+                        <div class="col-sm-6 offset-3 logo"></div>
                     </div>
-                </nav>
+                </div>
+
+                <!--NAVEGACIÓN-->
+                <div class="col-3 background-menu">
+                    <div class="row h-100 justify-content-around align-items-center">
+                        <a class="col" href="#destinos"><em>Destinos</em></a>
+                        <a class="col-5" href="#quienes-somos"><em>Quienes somos</em></a>
+                        <a class="col" href="#cuadroMapa"><em>Contacto</em></a>
+                    </div>
+                </div>
+                <div class="col-2 background-menu"></div>
+                <div class="col-2 background-menu">
+                    <div class="row sprite-social h-100 align-items-center justify-content-center">
+                        <div class="iconos-social" id="iconoTwitter"></div>
+                        <div class="iconos-social" id="iconoWhatsapp"></div>
+                        <div class="iconos-social" id="iconoFacebook"></div>
+                        <div class="iconos-social" id="iconoInstagram"></div>
+                        <div class="iconos-social" id="iconoLinkedin"></div>
+                        <div class="iconos-social" id="iconoYoutube"></div>
+                    </div>
+                </div>
+                <div class="col-1 background-menu"></div>
+            </nav>
+            <div class="row">
+
+            </div>
+
+            <div class="row align-items-center h-100">
+                <div class="col-sm-5 offset-4 cabecera">
+                    <h1>Viaja!</h1>
+                    <h3>Descubre lugares maravillosos!</h3>
+                    <button class="btn btn-warning"><em>Ver destinos</em></button>
+                </div>
             </div>
         </header>
 
         <!--CUERPO-->
-        <section class="row">
-
-            <div class="row col-sm-12">
-                <div class="col-sm-2">
-
-                </div>
-                <div class="col-sm img-container">
+        <section class="container-fluid" id="destinos">
+            <div class="row">
+                <div class="col offset-2 img-container">
                     <div class="img-encabezado">Save 90$ pay only</div>
-                    <div class="img-miniatura"></div>
+                    <div class="img-miniatura" id="beijing"></div>
                     <div class="img-precio">359$</div>
-                    <div class="img-lugar"></div>
+                    <div class="img-lugar">Beijing</div>
                 </div>
-                <div class="col-sm img-container">
+                <div class="col img-container">
                     <div class="img-encabezado">Save 75$ pay only</div>
-                    <div class="img-miniatura"></div>
+                    <div class="img-miniatura" id="buenosaires"></div>
                     <div class="img-precio">729$</div>
-                    <div class="img-lugar"></div>
+                    <div class="img-lugar">Buenos Aires</div>
                 </div>
-                <div class="col-sm img-container">
+                <div class="col img-container">
                     <div class="img-encabezado">Save 35$ pay only</div>
-                    <div class="img-miniatura"></div>
+                    <div class="img-miniatura" id="ciudadmexico"></div>
                     <div class="img-precio">519$</div>
-                    <div class="img-lugar"></div>
+                    <div class="img-lugar">Ciudad de Mexico</div>
                 </div>
-                <div class="col-sm-2">
-
-                </div>
+                <div class="col-2"></div>
             </div>
 
-            <div class="row col-sm-12">
-                <div class="col-sm-2">
-
-                </div>
-                <div class="col-sm img-container">
+            <div class="row">
+                <div class="col offset-2 img-container">
                     <div class="img-encabezado">Save 65$ pay only</div>
-                    <div class="img-miniatura"></div>
+                    <div class="img-miniatura" id="madrid"></div>
                     <div class="img-precio">329$</div>
-                    <div class="img-lugar"></div>
+                    <div class="img-lugar">Madrid</div>
                 </div>
-                <div class="col-sm img-container">
+                <div class="col img-container">
                     <div class="img-encabezado">Save 95$ pay only</div>
-                    <div class="img-miniatura"></div>
+                    <div class="img-miniatura" id="newyork"></div>
                     <div class="img-precio">199$</div>
-                    <div class="img-lugar"></div>
+                    <div class="img-lugar">New York</div>
                 </div>
-                <div class="col-sm img-container">
+                <div class="col img-container">
                     <div class="img-encabezado">Save 50$ pay only</div>
-                    <div class="img-miniatura"></div>
+                    <div class="img-miniatura" id="tokyo"></div>
                     <div class="img-precio">659$</div>
-                    <div class="img-lugar"></div>
+                    <div class="img-lugar">Tokyo</div>
                 </div>
-                <div class="col-sm-2">
-
-                </div>
+                <div class="col-2"></div>
             </div>
 
         </section>
 
-        <section class="row quienes-somos">
-            <div class="col-sm-2"></div>
-            <div class="jumbotron col-sm-4 quienes-somos-contenido">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eos illo, inventore iure iusto minima
-                    natus nulla quaerat quos tempore? Accusamus ad commodi corporis cum, debitis eligendi exercitationem
-                    fugiat hic ipsa iusto magnam natus neque nostrum numquam quidem rerum sequi sint soluta tempore?</p>
-                <button type="button" class="btn btn-dark" id="descubrir">DESCUBRIR</button>
+        <section class="container-fluid" id="quienes-somos">
+            <div class="row h-100 align-items-center">
+                <div class="jumbotron col-sm-4 offset-2 quienes-somos-contenido">
+                    <h2>QUIENES SOMOS</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eos illo, inventore iure iusto minima
+                        natus nulla quaerat quos tempore? Accusamus ad commodi corporis cum, debitis eligendi exercitationem
+                        fugiat hic ipsa iusto magnam natus neque nostrum numquam quidem rerum sequi sint soluta tempore?</p>
+                    <div class="row w-100 justify-content-center">
+                        <button type="button" class="btn btn-dark" id="descubrir">DESCUBRIR</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6"></div>
         </section>
 
         <section class="row lineaContacto align-items-center justify-content-center">   <!-- SECCION DE CONTACTO -->
