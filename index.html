@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0 m-0">
         <!--ENCABEZADO-->
         <header class="row">
             <div class="row w-100">
@@ -104,50 +104,70 @@
             <div class="col-sm-6"></div>
         </section>
 
-        <section class="row">
-            <iframe class="col-sm-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.350688496222!2d-0.3702072848993118!3d39.483995219758754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048a9b285af3f%3A0x63cce3249b9dae67!2sCalle+Jaca%2C+Valencia!5e0!3m2!1ses!2ses!4v1542037002524" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <section class="row lineaContacto align-items-center justify-content-center">   <!-- SECCION DE CONTACTO -->
+            <iframe class="col-sm-6 cuadroMapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.350688496222!2d-0.3702072848993373!3d39.483995219758754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048a9b285af3f%3A0x63cce3249b9dae67!2sCalle+Jaca%2C+Valencia!5e0!3m2!1ses!2ses!4v1542122834580" width="330" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
             <form class="col-sm-6">
                 <div class="row">
-                    <input type="text"><input type="text">
+                    <a class="col-12">E: enquiry@artiotravel.com</a>
+                    <a class="col-12">P: 0264 123 4567</a>
+                    <br><br>
+                    <p class="col-8">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days</p>
+                    <br><br><br>
+                    <a class="col-12">We are open from 8.30 AM - 4.00 PM week days.</a>
+                    <br>
+                    <hr class="raya"/>
+
                 </div>
                 <div class="row">
-                    <input type="text"><input type="text">
+                    <input type="text" class="col-4 name" placeholder="Name*"><input type="text" class="col-4 email" placeholder="Email*">
                 </div>
+                <br>
                 <div class="row">
-                    <textarea></textarea>
+                    <input type="text" class="col-4 phone" placeholder="Phone"><input type="text" class="col-4 country" placeholder="Country">
                 </div>
+                <br>
+                <div class="row">
+                    <textarea class="col-8 message" placeholder="Message"></textarea>
+                </div>
+                <a class="pleaseComplete">* PLEASE COMPLETE ALL FIELDS CORRECTLY </a>
             </form>
         </section>
-
+        <button type="submit" class="btn btn-warning enviarMensaje"><i>Enviar mensaje</i></button>
         <!--FOOTER-->
-        <footer class="row">
-            <div class="row col-sm-12">
-                <div class="col-sm-2">
-
+        <footer class="container-fluid ">
+            <div class="row">
+                <div class="col-sm-2"></div>
             </div>
-                <div class="col-sm-3">
-                    <h3>¿Necesitas ayuda?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore eligendi reiciendis.</p>
+            <div class="row seccionFooter">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <h3>¿Necesitas ayuda?</h3><br>
+                    <a class="margenAyuda">0234 123 4567</a><br>
+                    <a class="margenAyuda">enquiry@geekshubstravels.com</a><br>
+                    <a class="horario">Lun-Vie: 9.30-19.00 Sab: 10.00-14.00</a>
                 </div>
-                <div class="col-sm-3">
-                    <h3>Informacion</h3>
-                    <p>lorem</p>
-                    <p>ipsum</p>
-                    <p>dolor</p>
+                <div class="col-3">
+                    <h3>Informacion</h3><br>
+                    <a>Quienes somos</a><br>
+                    <a>Preguntas frecuentes</a><br>
+                    <a>Política de proactividad</a><br>
+                    <a>Condiciones generales</a><br>
+                    <a>Aviso legal</a><br>
+                    <a>Contacto</a><br>
+                    <a>Programa de puntos</a>
                 </div>
-                <div class="col-sm-4">
-                    <h3>Suscríbete a la newsletter</h3>
-                    <input type="text">
+                <div class="col-4">
+                    <h3>Suscríbete a la newsletter</h3><br>
+                    <input type="text" placeholder="Correo electrónico"><br><br>
                     <button type="button" class="btn btn-warning">SUSCRIBETE</button>
                 </div>
             </div>
             <div class="row w-100">
-                <hr class="w-100">
+                <hr class="w-100 barraFooter">
             </div>
-
-            <div class="row row-100">
-                <div class="col-sm-12">
-                    <p>GeeksHubs Travels 2018 todos los derechos reservados.</p>
+            <div class="row w-100 derechosReservados">
+                <div class="col-sm-12 text-center">
+                    <a>GeeksHubs Travels 2018 todos los derechos reservados.</a>
                 </div>
             </div>
         </footer>
