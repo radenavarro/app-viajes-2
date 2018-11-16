@@ -11,33 +11,45 @@
     <div class="container-fluid p-0 m-0">
         <!--ENCABEZADO-->
         <header class="container-fluid">
-            <nav class="row nav-menu fixed-top">
-                <div class="col-4">
-                    <div class="row background-logo">
-                        <div class="col-sm-6 offset-3 logo"></div>
+            <nav class="nav-menu">
+                <!--NAVEGACIÓN-->
+                <div class="row background-menu fixed-top">
+                    <!--Logo-->
+                    <div class="col-4">
+                        <div class="row background-logo">
+                            <div class="col-sm-6 offset-3 logo"></div>
+                        </div>
                     </div>
+                    <!--Links-->
+                    <div class="col-4">
+                        <nav class="navbar navbar-expand-xl navbar-dark h-100 justify-content-center">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon justify-content-center"></span>
+                            </button>
+                            <div class="row h-100 justify-content-xl-around align-items-center collapse navbar-collapse navbar-nav mr-auto" id="navbarSupportedContent">
+                                <div class="d-lg-block fondoDropdown">
+                                    <a class="col-xl-3 col-lg-4 nav-item text-center" href="#destinos"><em>Destinos</em></a>
+                                    <a class="col-xl-6 col-lg-4 nav-item text-center" href="#quienes-somos"><em>Quienes somos</em></a>
+                                    <a class="col-xl-3 col-lg-4 nav-item text-center" href="#cuadroMapa"><em>Contacto</em></a>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                    <!--<div class="col-2 background-menu"></div>-->
+                    <div class="col-2 offset-1">
+                        <div class="row sprite-social h-100 align-items-center justify-content-center">
+                            <div class="iconos-social" id="iconoTwitter"></div>
+                            <div class="iconos-social" id="iconoWhatsapp"></div>
+                            <div class="iconos-social" id="iconoFacebook"></div>
+                            <div class="iconos-social" id="iconoInstagram"></div>
+                            <div class="iconos-social" id="iconoLinkedin"></div>
+                            <div class="iconos-social" id="iconoYoutube"></div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
                 </div>
 
-                <!--NAVEGACIÓN-->
-                <div class="col-3 background-menu">
-                    <div class="row h-100 justify-content-around align-items-center">
-                        <a class="col" href="#destinos"><em>Destinos</em></a>
-                        <a class="col-5" href="#quienes-somos"><em>Quienes somos</em></a>
-                        <a class="col" href="#cuadroMapa"><em>Contacto</em></a>
-                    </div>
-                </div>
-                <div class="col-2 background-menu"></div>
-                <div class="col-2 background-menu">
-                    <div class="row sprite-social h-100 align-items-center justify-content-center">
-                        <div class="iconos-social" id="iconoTwitter"></div>
-                        <div class="iconos-social" id="iconoWhatsapp"></div>
-                        <div class="iconos-social" id="iconoFacebook"></div>
-                        <div class="iconos-social" id="iconoInstagram"></div>
-                        <div class="iconos-social" id="iconoLinkedin"></div>
-                        <div class="iconos-social" id="iconoYoutube"></div>
-                    </div>
-                </div>
-                <div class="col-1 background-menu"></div>
             </nav>
             <div class="row">
 
@@ -102,7 +114,7 @@
 
         <section class="container-fluid" id="quienes-somos">
             <div class="row h-100 align-items-center">
-                <div class="jumbotron col-sm-4 offset-2 quienes-somos-contenido">
+                <div class="jumbotron col-sm-8 col-lg-4 offset-2 quienes-somos-contenido">
                     <h2>QUIENES SOMOS</h2>
                     <hr>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eos illo, inventore iure iusto minima
@@ -115,7 +127,7 @@
             </div>
         </section>
 
-        <section class="row lineaContacto align-items-center justify-content-center" id="cuadroMapa">   <!-- SECCION DE CONTACTO -->
+        <section class="row lineaContacto align-items-center justify-content-center flex-sm-column flex-xl-row" id="cuadroMapa">   <!-- SECCION DE CONTACTO -->
             <iframe class="col-sm-6 cuadroMapa"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.350688496222!2d-0.3702072848993373!3d39.483995219758754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048a9b285af3f%3A0x63cce3249b9dae67!2sCalle+Jaca%2C+Valencia!5e0!3m2!1ses!2ses!4v1542122834580" width="330" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
             <form class="col-sm-6">
                 <div class="row">
