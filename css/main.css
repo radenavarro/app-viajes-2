@@ -1,4 +1,5 @@
-/* ==== GENERAL ==== */
+/* ============ GENERAL ============ */
+/*Reseteo de márgenes y paddings del navegador*/
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* ==== Pantalla menú ==== */
+/* ============ Pantalla menú ============ */
 
 header{
     width: 100vw;
@@ -19,14 +20,6 @@ header{
     margin-bottom: 2rem;
 }
 
-header>div:last-child{
-    /*height: 60vh;*/
-}
-
-header>div:first-child{
-    height: 14vh;
-}
-
 .nav-menu .logo{
     background-image: url("../img/iconoweb.png");
     background-repeat: no-repeat;
@@ -34,10 +27,12 @@ header>div:first-child{
     min-height: 12vh;
 }
 
+/*Color de la barra de navegación (parte derecha)*/
 .nav-menu .background-menu{
     background-color: rgba(0,0,0,0.8);
 }
 
+/*Degradado de la barra de navegación (parte izquierda, machaca el color anterior)*/
 .nav-menu .background-logo{
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 89%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
@@ -46,6 +41,7 @@ header>div:first-child{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 }
 
+/*Efectos hover de links del menú*/
 .nav-menu .background-menu a:link, .nav-menu .background-menu a:visited{
     color: white;
     border: none;
@@ -146,8 +142,8 @@ header>div:first-child{
     background-position: -160px 0px;
 }
 
-/*==== Destinos ====*/
-
+/*============ Destinos ============*/
+/*Propiedades comunes de las miniaturas*/
 .img-miniatura{
     width: 100%;
     max-height: 192px;
@@ -207,18 +203,7 @@ header>div:first-child{
     background-image: url("../img/tokyo.JPG");
 }
 
-/*.sprite-social{*/
-/*!*width: 20%;*!*/
-/*background-size: 200%;*/
-/*background-image: url("../img/sprite_social.png");*/
-/*background-position: 0 0;*/
-/*}*/
-
-/*.iconos-social{*/
-/*width: ;*/
-/*}*/
-
-/* ==== Quienes somos ==== */
+/* ======== Quienes somos ======== */
 
 #quienes-somos{
     width: 100vw;
@@ -235,7 +220,7 @@ header>div:first-child{
     color: yellow;
 }
 
-/* SECCION DE CONTACTO */
+/*======== SECCION DE CONTACTO ========*/
 .lineaContacto{
     background-color: #fafafa;
     height: 400px;
