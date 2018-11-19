@@ -51,15 +51,12 @@ header{
 .nav-menu .background-menu a:link, .nav-menu .background-menu a:visited{
     color: white;
     border: none;
-    /*font-size: 1.2em;*/
     transition: text-shadow 0.4s;
 }
-
 .nav-menu .background-menu a:hover, .nav-menu .background-menu a:active{
     color: white;
     border: none;
     text-shadow: 0 0 0.2em #EA7B5D, 0 0 0.4em #EA7B5D, 0 0 0.8em #EA7B5D, 0 0 1.6em #EA7B5D;
-    /*font-size: 1.2em;*/
     text-decoration: none;
     transition: text-shadow 0.4s;
 }
@@ -90,12 +87,12 @@ header{
 }
 .sprite-social #iconoTwitter{
     background-image: url("../img/sprite_social.png");
-    background-position: 0px 32px;
+    background-position: 0 32px;
 }
 
 .sprite-social #iconoTwitter:hover{
     background-image: url("../img/sprite_social.png");
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 .sprite-social #iconoWhatsapp{
@@ -105,7 +102,7 @@ header{
 
 .sprite-social #iconoWhatsapp:hover{
     background-image: url("../img/sprite_social.png");
-    background-position: -32px 0px;
+    background-position: -32px 0;
 }
 
 .sprite-social #iconoFacebook{
@@ -115,7 +112,7 @@ header{
 
 .sprite-social #iconoFacebook:hover{
     background-image: url("../img/sprite_social.png");
-    background-position: -64px 0px;
+    background-position: -64px 0;
 }
 
 .sprite-social #iconoInstagram{
@@ -125,7 +122,7 @@ header{
 
 .sprite-social #iconoInstagram:hover{
     background-image: url("../img/sprite_social.png");
-    background-position: -96px 0px;
+    background-position: -96px 0;
 }
 
 .sprite-social #iconoLinkedin{
@@ -135,7 +132,7 @@ header{
 
 .sprite-social #iconoLinkedin:hover{
     background-image: url("../img/sprite_social.png");
-    background-position: -128px 0px;
+    background-position: -128px 0;
 }
 
 .sprite-social #iconoYoutube{
@@ -145,7 +142,7 @@ header{
 
 .sprite-social #iconoYoutube:hover{
     background-image: url("../img/sprite_social.png");
-    background-position: -160px 0px;
+    background-position: -160px 0;
 }
 
 /*============ Destinos ============*/
@@ -256,7 +253,6 @@ footer{
     margin-top: 25px;
     position: absolute;
     bottom: revert;
-
 }
 .horario{
     font-size: xx-small;
@@ -290,6 +286,7 @@ footer{
     width: 25px;
 }
 
+/* Estilos para monitores con ancho inferior a 1427px */
 @media (max-width: 1427px) {
     /* Sprites */
 
@@ -299,12 +296,12 @@ footer{
         width: 24px;
     }
     .sprite-social #iconoTwitter{
-        background-position: 0px 24px;
+        background-position: 0 24px;
     }
 
     .sprite-social #iconoTwitter:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: 0px 0px;
+        background-position: 0 0;
     }
 
     .sprite-social #iconoWhatsapp{
@@ -314,7 +311,7 @@ footer{
 
     .sprite-social #iconoWhatsapp:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -24px 0px;
+        background-position: -24px 0;
     }
 
     .sprite-social #iconoFacebook{
@@ -324,7 +321,7 @@ footer{
 
     .sprite-social #iconoFacebook:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -48px 0px;
+        background-position: -48px 0;
     }
 
     .sprite-social #iconoInstagram{
@@ -334,7 +331,7 @@ footer{
 
     .sprite-social #iconoInstagram:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -72px 0px;
+        background-position: -72px 0;
     }
 
     .sprite-social #iconoLinkedin{
@@ -344,7 +341,7 @@ footer{
 
     .sprite-social #iconoLinkedin:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -96px 0px;
+        background-position: -96px 0;
     }
 
     .sprite-social #iconoYoutube{
@@ -354,10 +351,11 @@ footer{
 
     .sprite-social #iconoYoutube:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -120px 0px;
+        background-position: -120px 0;
     }
 }
 
+/*Estilos para monitores con ancho inferior a 1199px*/
 @media (max-width: 1199px) {
     .nav-menu a.nav-item{
         background-color: rgba(0,0,0,0.8);
@@ -375,6 +373,7 @@ footer{
     }
 }
 
+/*Estilos para monitores con ancho inferior a 600px*/
 @media (max-width: 600px){
     /* Sprites */
 
@@ -385,12 +384,12 @@ footer{
     }
     .sprite-social #iconoTwitter{
         background-image: url("../img/sprite_social.png");
-        background-position: 0px 16px;
+        background-position: 0 16px;
     }
 
     .sprite-social #iconoTwitter:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: 0px 0px;
+        background-position: 0 0;
     }
 
     .sprite-social #iconoWhatsapp{
@@ -400,7 +399,7 @@ footer{
 
     .sprite-social #iconoWhatsapp:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -16px 0px;
+        background-position: -16px 0;
     }
 
     .sprite-social #iconoFacebook{
@@ -410,7 +409,7 @@ footer{
 
     .sprite-social #iconoFacebook:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -32px 0px;
+        background-position: -32px 0;
     }
 
     .sprite-social #iconoInstagram{
@@ -420,7 +419,7 @@ footer{
 
     .sprite-social #iconoInstagram:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -48px 0px;
+        background-position: -48px 0;
     }
 
     .sprite-social #iconoLinkedin{
@@ -430,7 +429,7 @@ footer{
 
     .sprite-social #iconoLinkedin:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -64px 0px;
+        background-position: -64px 0;
     }
 
     .sprite-social #iconoYoutube{
@@ -440,6 +439,6 @@ footer{
 
     .sprite-social #iconoYoutube:hover{
         background-image: url("../img/sprite_social.png");
-        background-position: -80px 0px;
+        background-position: -80px 0;
     }
 }
