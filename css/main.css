@@ -577,4 +577,15 @@ footer {
         display: block;
     }
 
+    #contenedor_hamburguesa{
+        max-width: 100%;
+        flex-grow: 1;
+    }
+
+}
+
+@media (max-width: 576px){
+    #nav_hamburguesa{
+        justify-content: flex-end !important;
+    }
 }
