@@ -1,30 +1,27 @@
-/* ============ GENERAL ============ */
+/* ======================== GENERAL ======================== */
 /*Reseteo de márgenes y paddings del navegador*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
+/* Reseteo de márgenes de la clase h-100 de Bootstrap */
+.h-100 {
+    margin: 0;
+}
+
 /*Scroll al hacer click en las anclas*/
-html{
+html {
     scroll-behavior: smooth;
 }
 
-/* ============ Pantalla menú ============ */
+/* ======================== PANTALLA MENÚ ======================== */
 
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
-    background-size: cover;
-    margin-bottom: 2rem;
-}
-
-.nav-menu{
+.nav-menu {
     font-size: calc(0.3em + 1vw);
 }
 
-.nav-menu .logo{
+.nav-menu .logo {
     background-image: url("../img/iconoweb.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -32,28 +29,29 @@ header{
 }
 
 /*Color de la barra de navegación (parte derecha)*/
-.nav-menu .background-menu{
-    background-color: rgba(0,0,0,0.8);
+.nav-menu .background-menu {
+    background-color: rgba(0, 0, 0, 0.8);
     height: 86px;
 }
 
 /*Degradado de la barra de navegación (parte izquierda, machaca el color anterior)*/
-.nav-menu .background-logo{
+.nav-menu .background-logo {
     height: 86px;
     background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 89%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0.8) 0%,rgba(246,246,246,0.8) 89%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,0.8) 0%,rgba(246,246,246,0.8) 89%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(246, 246, 246, 0.8) 89%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(246, 246, 246, 0.8) 89%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(246, 246, 246, 0.8) 89%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=1); /* IE6-9 */
 }
 
 /*Efectos hover de links del menú*/
-.nav-menu .background-menu a:link, .nav-menu .background-menu a:visited{
+.nav-menu .background-menu a:link, .nav-menu .background-menu a:visited {
     color: white;
     border: none;
     transition: text-shadow 0.4s;
 }
-.nav-menu .background-menu a:hover, .nav-menu .background-menu a:active{
+
+.nav-menu .background-menu a:hover, .nav-menu .background-menu a:active {
     color: white;
     border: none;
     text-shadow: 0 0 0.2em #EA7B5D, 0 0 0.4em #EA7B5D, 0 0 0.8em #EA7B5D, 0 0 1.6em #EA7B5D;
@@ -61,93 +59,113 @@ header{
     transition: text-shadow 0.4s;
 }
 
-.cabecera>*{
+/* Cabecera */
+.home {
+    padding: 0;
+}
+.my-banner{
+    width: 100vw;
+    height: 70vh;
+    min-height: 40vh;
+    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cabecera > * {
     color: white;
 }
 
-.cabecera h1{
+.cabecera h1 {
     font-size: 4em;
 }
 
-.cabecera h3{
+.cabecera h3 {
     font-weight: normal;
 }
 
-.cabecera button{
+.cabecera button {
     color: black;
 }
 
 /* Sprites */
 
-.iconos-social{
+.iconos-social {
     background-size: 192px;
     height: 32px;
     width: 32px;
     margin-right: 8px;
 }
-.sprite-social #iconoTwitter{
+
+.sprite-social #iconoTwitter {
     background-image: url("../img/sprite_social.png");
     background-position: 0 32px;
 }
 
-.sprite-social #iconoTwitter:hover{
+.sprite-social #iconoTwitter:hover {
     background-image: url("../img/sprite_social.png");
     background-position: 0 0;
 }
 
-.sprite-social #iconoWhatsapp{
+.sprite-social #iconoWhatsapp {
     background-image: url("../img/sprite_social.png");
     background-position: -32px 32px;
 }
 
-.sprite-social #iconoWhatsapp:hover{
+.sprite-social #iconoWhatsapp:hover {
     background-image: url("../img/sprite_social.png");
     background-position: -32px 0;
 }
 
-.sprite-social #iconoFacebook{
+.sprite-social #iconoFacebook {
     background-image: url("../img/sprite_social.png");
     background-position: -64px 32px;
 }
 
-.sprite-social #iconoFacebook:hover{
+.sprite-social #iconoFacebook:hover {
     background-image: url("../img/sprite_social.png");
     background-position: -64px 0;
 }
 
-.sprite-social #iconoInstagram{
+.sprite-social #iconoInstagram {
     background-image: url("../img/sprite_social.png");
     background-position: -96px 32px;
 }
 
-.sprite-social #iconoInstagram:hover{
+.sprite-social #iconoInstagram:hover {
     background-image: url("../img/sprite_social.png");
     background-position: -96px 0;
 }
 
-.sprite-social #iconoLinkedin{
+.sprite-social #iconoLinkedin {
     background-image: url("../img/sprite_social.png");
     background-position: -128px 32px;
 }
 
-.sprite-social #iconoLinkedin:hover{
+.sprite-social #iconoLinkedin:hover {
     background-image: url("../img/sprite_social.png");
     background-position: -128px 0;
 }
 
-.sprite-social #iconoYoutube{
+.sprite-social #iconoYoutube {
     background-image: url("../img/sprite_social.png");
     background-position: -160px 32px;
 }
 
-.sprite-social #iconoYoutube:hover{
+.sprite-social #iconoYoutube:hover {
     background-image: url("../img/sprite_social.png");
     background-position: -160px 0;
 }
 
-/*============ Destinos ============*/
+/*======================== DESTINOS ========================*/
+/*Version monitor*/
+.img-section {
+    margin: 2em 0 0 0;
+
+}
+
 /*Propiedades comunes de las miniaturas*/
-.img-miniatura{
+.img-miniatura {
     width: 100%;
     max-height: 192px;
     background-size: cover;
@@ -155,7 +173,7 @@ header{
 
 }
 
-.img-container{
+.img-container {
     position: relative;
     width: 256px;
     height: 256px;
@@ -164,13 +182,13 @@ header{
     margin-bottom: 2rem;
 }
 
-.img-encabezado{
+.img-encabezado {
     color: white;
     background-color: #2E3943;
     padding: 0.6rem;
 }
 
-.img-precio{
+.img-precio {
     position: absolute;
     top: 0;
     right: 15px;
@@ -182,96 +200,169 @@ header{
     font-weight: bold;
 }
 
-.img-lugar{
+.img-lugar {
     text-align: center;
     font-weight: bold;
 }
 
-#beijing{
+#beijing {
     background-image: url("../img/beijing.JPG");
 }
-#buenosaires{
+
+#buenosaires {
     background-image: url("../img/buenos_aires.JPG");
 }
-#ciudadmexico{
+
+#ciudadmexico {
     background-image: url("../img/ciudad_mexico.JPG");
 }
-#madrid{
+
+#madrid {
     background-image: url("../img/madrid.JPG");
 }
-#newyork{
+
+#newyork {
     background-image: url("../img/new_york.JPG");
 }
-#tokyo{
+
+#tokyo {
     background-image: url("../img/tokyo.JPG");
 }
 
-/* ======== Quienes somos ======== */
+/*Version movil*/
+.carousel-inner {
+    margin: 2em 0 2em 0;
 
-#quienes-somos{
+}
+
+.d-block {
+    height: 25vh;
+    width: 25vh;
+}
+
+/*Propiedades comunes de las miniaturas*/
+.sld-encabezado {
+    color: white;
+    background-color: #2E3943;
+    padding: 0.6rem;
+}
+
+.sld-miniatura {
+    width: 100%;
+    background-size: cover;
+    flex: 0 2 256px;
+    position: relative;
+    width: 39vh;
+
+}
+
+.sld-precio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100px;
+    max-height: 64px;
+    background-color: yellow;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.sld-lugar {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ==================== QUIENES SOMOS ==================== */
+.jumbotron {
+    margin: 0 1em 0 1em;
+}
+
+#quienes-somos {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     background-image: url("../img/travel_1.jpg");
     background-size: cover;
 }
 
-#quienes-somos .quienes-somos-contenido hr{
+#quienes-somos .quienes-somos-contenido hr {
     border-color: yellow;
 }
 
-#descubrir{
+#descubrir {
     color: yellow;
 }
 
-/*======== SECCION DE CONTACTO ========*/
-.lineaContacto{
+/*==================== SECCION DE CONTACTO ====================*/
+.lineaContacto {
     background-color: #fafafa;
-    height: 400px;
+    height: 100%;
+    margin: 10vh 0 5vh 0;
 }
-.cuadroMapa{
+
+.cuadroMapa {
     max-width: 330px;
 }
-.name{
+
+.form {
+    margin: 5vh 0 0 0;
+}
+
+.name {
     margin-right: 15px;
     margin-left: 15px;
 }
-.email{}
-.phone{
+
+.email {
+}
+
+.phone {
     margin-right: 15px;
     margin-left: 15px;
 }
-.country{}
-.message{
+
+.country {
+}
+
+.message {
     margin-left: 15px;
 }
-.pleaseComplete{
+
+.pleaseComplete {
     font-size: xx-small;
 }
-footer{
+
+/*==================== FOOTER ====================*/
+footer {
     background-color: #141939;
     color: white;
-    margin-top: 25px;
     position: absolute;
     bottom: revert;
 }
-.horario{
+
+.horario {
     font-size: xx-small;
 }
-.seccionFooter{
+
+.seccionFooter {
     margin: auto;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
 }
-.margenAyuda{
+
+.margenAyuda {
     margin-left: 15px;
 }
-.barraFooter{
+
+.barraFooter {
     border-top: 1px solid black;
 }
-.derechosReservados{
+
+.derechosReservados {
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.enviarMensaje{
+
+.enviarMensaje {
     background-color: #FEF200;
     margin-top: -4vh;
     margin-left: 50%;
@@ -279,77 +370,89 @@ footer{
     color: black;
     border-radius: 0;
 }
-.raya{
+
+.raya {
     background-color: cornflowerblue;
     height: 0.1vh;
     margin-left: 15px;
     width: 25px;
 }
 
+.btn-warning {
+    margin: 10px 0 0 0;
+}
+
+/* Versión movil */
+.social-footer {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+
 /* Estilos para monitores con ancho inferior a 1427px */
 @media (max-width: 1427px) {
     /* Sprites */
-
-    .iconos-social{
+    .iconos-social {
         background-size: 144px;
         height: 24px;
         width: 24px;
     }
-    .sprite-social #iconoTwitter{
+
+    .sprite-social #iconoTwitter {
         background-position: 0 24px;
     }
 
-    .sprite-social #iconoTwitter:hover{
+    .sprite-social #iconoTwitter:hover {
         background-image: url("../img/sprite_social.png");
         background-position: 0 0;
     }
 
-    .sprite-social #iconoWhatsapp{
+    .sprite-social #iconoWhatsapp {
         background-image: url("../img/sprite_social.png");
         background-position: -24px 24px;
     }
 
-    .sprite-social #iconoWhatsapp:hover{
+    .sprite-social #iconoWhatsapp:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -24px 0;
     }
 
-    .sprite-social #iconoFacebook{
+    .sprite-social #iconoFacebook {
         background-image: url("../img/sprite_social.png");
         background-position: -48px 24px;
     }
 
-    .sprite-social #iconoFacebook:hover{
+    .sprite-social #iconoFacebook:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -48px 0;
     }
 
-    .sprite-social #iconoInstagram{
+    .sprite-social #iconoInstagram {
         background-image: url("../img/sprite_social.png");
         background-position: -72px 24px;
     }
 
-    .sprite-social #iconoInstagram:hover{
+    .sprite-social #iconoInstagram:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -72px 0;
     }
 
-    .sprite-social #iconoLinkedin{
+    .sprite-social #iconoLinkedin {
         background-image: url("../img/sprite_social.png");
         background-position: -96px 24px;
     }
 
-    .sprite-social #iconoLinkedin:hover{
+    .sprite-social #iconoLinkedin:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -96px 0;
     }
 
-    .sprite-social #iconoYoutube{
+    .sprite-social #iconoYoutube {
         background-image: url("../img/sprite_social.png");
         background-position: -120px 24px;
     }
 
-    .sprite-social #iconoYoutube:hover{
+    .sprite-social #iconoYoutube:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -120px 0;
     }
@@ -357,88 +460,121 @@ footer{
 
 /*Estilos para monitores con ancho inferior a 1199px*/
 @media (max-width: 1199px) {
-    .nav-menu a.nav-item{
-        background-color: rgba(0,0,0,0.8);
+    .nav-menu a.nav-item {
+        background-color: rgba(0, 0, 0, 0.8);
         display: block;
         width: 100%;
     }
-    .fondoDropdown{
+
+    .fondoDropdown {
         margin-top: 4vh;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         transition: all 0.3s;
     }
-    .img-precio{
+
+    .img-precio {
         position: static;
         max-width: unset;
     }
 }
 
 /*Estilos para monitores con ancho inferior a 600px*/
-@media (max-width: 600px){
-    /* Sprites */
+@media (max-width: 600px) {
+    /* ocultar en diseño movil */
+    .desktop-only {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+    }
 
-    .iconos-social{
+    /* Sprites */
+    .iconos-social {
         background-size: 96px;
         height: 16px;
         width: 16px;
     }
-    .sprite-social #iconoTwitter{
+
+    .sprite-social .iconoTwitter {
         background-image: url("../img/sprite_social.png");
         background-position: 0 16px;
     }
 
-    .sprite-social #iconoTwitter:hover{
+    .sprite-social .iconoTwitter:hover {
         background-image: url("../img/sprite_social.png");
         background-position: 0 0;
     }
 
-    .sprite-social #iconoWhatsapp{
+    .sprite-social .iconoWhatsapp {
         background-image: url("../img/sprite_social.png");
         background-position: -16px 16px;
     }
 
-    .sprite-social #iconoWhatsapp:hover{
+    .sprite-social .iconoWhatsapp:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -16px 0;
     }
 
-    .sprite-social #iconoFacebook{
+    .sprite-social .iconoFacebook {
         background-image: url("../img/sprite_social.png");
         background-position: -32px 16px;
     }
 
-    .sprite-social #iconoFacebook:hover{
+    .sprite-social .iconoFacebook:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -32px 0;
     }
 
-    .sprite-social #iconoInstagram{
+    .sprite-social .iconoInstagram {
         background-image: url("../img/sprite_social.png");
         background-position: -48px 16px;
     }
 
-    .sprite-social #iconoInstagram:hover{
+    .sprite-social .iconoInstagram:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -48px 0;
     }
 
-    .sprite-social #iconoLinkedin{
+    .sprite-social .iconoLinkedin {
         background-image: url("../img/sprite_social.png");
         background-position: -64px 16px;
     }
 
-    .sprite-social #iconoLinkedin:hover{
+    .sprite-social .iconoLinkedin:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -64px 0;
     }
 
-    .sprite-social #iconoYoutube{
+    .sprite-social .iconoYoutube {
         background-image: url("../img/sprite_social.png");
         background-position: -80px 16px;
     }
 
-    .sprite-social #iconoYoutube:hover{
+    .sprite-social .iconoYoutube:hover {
         background-image: url("../img/sprite_social.png");
         background-position: -80px 0;
     }
+}
+
+/* Mostrar y ocultar contenido en monitores y dispositivos móviles*/
+.content-desktop {
+    display: block;
+}
+
+.content-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-desktop {
+        display: none;
+    }
+
+    .content-mobile {
+        display: block;
+    }
+
 }
