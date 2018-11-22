@@ -276,8 +276,19 @@ html {
 }
 
 /* ==================== QUIENES SOMOS ==================== */
-.jumbotron {
-    margin: 0 1em 0 1em;
+.content-qs-mobile {
+    background-color: white;
+    padding: 5vh;
+    min-height: 50vh;
+    min-width: 40%;
+    margin: 0;
+}
+
+.content-qs-desktop {
+    background-color: white;
+    padding: 5vh;
+    min-height: 50vh;
+    min-width: 40%;
 }
 
 #quienes-somos {
@@ -291,7 +302,7 @@ html {
     border-color: yellow;
 }
 
-#descubrir {
+.descubrir {
     color: yellow;
 }
 
@@ -332,6 +343,10 @@ html {
 
 .pleaseComplete {
     font-size: xx-small;
+}
+
+.row-button {
+    margin: 0;
 }
 
 /*==================== FOOTER ====================*/
@@ -382,7 +397,7 @@ footer {
 /* Versión movil */
 .social-footer {
     padding: 0;
-    margin: 0 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
 

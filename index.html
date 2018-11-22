@@ -23,7 +23,8 @@
                 <!-- Links -->
                 <div class="col-4" id="contenedor_hamburguesa">
                     <!-- Anclas -->
-                    <nav id="nav_hamburguesa" class="navbar navbar-expand-xl navbar-dark h-100 justify-content-sm-end justify-content-md-center">
+                    <nav id="nav_hamburguesa"
+                         class="navbar navbar-expand-xl navbar-dark h-100 justify-content-sm-end justify-content-md-center">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -63,19 +64,6 @@
         <div class="my-banner">
             <div class="row align-items-center h-100">
 
-                <!-- Versión monitor -->
-                <section class="d-none d-sm-block">
-                <div class="row col-6 offset-3">
-                    <div class="col-md-12 text-left-center cabecera">
-                        <h1>Viaja!</h1>
-                        <h3>Descubre lugares maravillosos!</h3>
-                    </div>
-                    <div class="col-md-12 text-center cabecera">
-                        <button class="btn btn-warning"><em>Ver destinos</em></button>
-                    </div>
-                </div>
-                </section>
-
                 <!-- Versión movil -->
                 <section class="d-block d-sm-none">
                     <div class="row col-10 offset-1">
@@ -88,6 +76,21 @@
                         </div>
                     </div>
                 </section>
+
+
+                <!-- Versión monitor -->
+                <section class="container-fluid d-none d-sm-block">
+                    <div class="row col-6 offset-3">
+                        <div class="col-md-12 text-left-center cabecera">
+                            <h1>Viaja!</h1>
+                            <h3>Descubre lugares maravillosos!</h3>
+                        </div>
+                        <div class="col-md-12 text-center cabecera">
+                            <button class="btn btn-warning"><em>Ver destinos</em></button>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
     </section>
@@ -206,19 +209,41 @@
     <!-- QUIENES SOMOS -->
     <section class="container-fluid" id="quienes-somos">
         <div class="row h-100 align-items-center">
-            <div class="jumbotron col-sm-8 col-lg-4 offset-2 quienes-somos-contenido">
-                <h2>QUIENES SOMOS</h2>
-                <hr>
-                <p>GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de viajeros
-                    entusiastas que deciden hacer de su pasión por conocer el mundo un modo de vida. Desde
-                    nuestros
-                    inicios hemos diseñado más de 500 viajes organizadas a diferentes destinos de Europa,
-                    Norteamérica y
-                    Asia. Nuestro objetivo ahora es ir ampliando horizontes poco a poco.</p>
-                <div class="row w-100 justify-content-center">
-                    <button type="button" class="btn btn-dark" id="descubrir">DESCUBRIR</button>
+
+            <!-- Versión Móvil -->
+            <section class="content-mobile">
+                <div class="content-qs-mobile quienes-somos-contenido col-sm-8 col-lg-4 offset-2">
+                    <h2>QUIENES SOMOS</h2>
+                    <hr>
+                    <p>GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de viajeros
+                        entusiastas que deciden hacer de su pasión por conocer el mundo un modo de vida. Desde
+                        nuestros
+                        inicios hemos diseñado más de 500 viajes organizadas a diferentes destinos de Europa,
+                        Norteamérica y
+                        Asia. Nuestro objetivo ahora es ir ampliando horizontes poco a poco.</p>
+                    <div class="row w-100 justify-content-center">
+                        <button type="button" class="btn btn-dark descubrir">DESCUBRIR</button>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Versión Monitor -->
+            <section class="content-desktop">
+                <div class="content-qs-desktop quienes-somos-contenido col-sm-8 col-lg-4 offset-2">
+                    <h2>QUIENES SOMOS</h2>
+                    <hr>
+                    <p>GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de viajeros
+                        entusiastas que deciden hacer de su pasión por conocer el mundo un modo de vida. Desde
+                        nuestros
+                        inicios hemos diseñado más de 500 viajes organizadas a diferentes destinos de Europa,
+                        Norteamérica y
+                        Asia. Nuestro objetivo ahora es ir ampliando horizontes poco a poco.</p>
+                    <div class="row w-100 justify-content-center">
+                        <button type="button" class="btn btn-dark descubrir">DESCUBRIR</button>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </section>
     <!-- SECCION DE CONTACTO -->
@@ -265,8 +290,8 @@
                     <div class="row">
                         <a class="pleaseComplete col-md-12">* PLEASE COMPLETE ALL FIELDS CORRECTLY </a>
                     </div>
-                    <div class="row">
-                        <button type="submit" class="btn btn-warning col-md-3 enviarMensaje"><i>Enviar mensaje</i>
+                    <div class="row-button">
+                        <button type="submit" class="btn btn-warning col-md-4 col-sm-2 enviarMensaje"><i>Enviar mensaje</i>
                         </button>
                     </div>
                 </form>
