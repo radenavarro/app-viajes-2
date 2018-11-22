@@ -206,27 +206,27 @@ html {
 }
 
 #beijing {
-    background-image: url("../img/beijing.JPG");
+    background-image: url("../img/beijing.jpeg");
 }
 
 #buenosaires {
-    background-image: url("../img/buenos_aires.JPG");
+    background-image: url("../img/buenos_aires.jpeg");
 }
 
 #ciudadmexico {
-    background-image: url("../img/ciudad_mexico.JPG");
+    background-image: url("../img/ciudad_mexico.jpeg");
 }
 
 #madrid {
-    background-image: url("../img/madrid.JPG");
+    background-image: url("../img/madrid.jpeg");
 }
 
 #newyork {
-    background-image: url("../img/new_york.JPG");
+    background-image: url("../img/new_york.jpeg");
 }
 
 #tokyo {
-    background-image: url("../img/tokyo.JPG");
+    background-image: url("../img/tokyo.jpeg");
 }
 
 /*Version movil*/
@@ -241,6 +241,10 @@ html {
 }
 
 /*Propiedades comunes de las miniaturas*/
+.d-block {
+    width: 100%;
+}
+
 .sld-encabezado {
     color: white;
     background-color: #2E3943;
@@ -248,11 +252,9 @@ html {
 }
 
 .sld-miniatura {
-    width: 100%;
     background-size: cover;
     flex: 0 2 256px;
     position: relative;
-    width: 39vh;
 
 }
 
@@ -342,11 +344,6 @@ footer {
 
 .horario {
     font-size: xx-small;
-}
-
-.seccionFooter {
-    margin: auto;
-    margin: 20px 0 20px 0;
 }
 
 .margenAyuda {
