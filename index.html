@@ -30,7 +30,8 @@
                                 aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon justify-content-center"></span>
                         </button>
-                        <div class="desplegable justify-content-xl-around align-items-sm-end collapse navbar-collapse navbar-nav mr-auto" id="navbarSupportedContent">
+                        <div class="desplegable justify-content-xl-around align-items-sm-end collapse navbar-collapse navbar-nav mr-auto"
+                             id="navbarSupportedContent">
                             <div class="d-lg-block fondoDropdown">
                                 <a class="col-xl-3 nav-item text-center" href="#destinos"><em>Destinos</em></a>
                                 <a class="col-xl-6 nav-item text-center" href="#quienes-somos"><em>Quienes
@@ -206,14 +207,14 @@
     </section>
 
     <!-- QUIENES SOMOS -->
-    <section class="container-fluid" id="quienes-somos">
-        <div class="row h-100 align-items-center">
 
-            <!-- Versión Móvil -->
-            <section class="content-mobile">
-                <div class="content-qs-mobile quienes-somos-contenido col-sm-8 col-lg-4 offset-2">
+    <!-- Versión Móvil -->
+    <section class="content-mobile">
+        <section class="container-fluid quienes-somos-mobile">
+            <div class="row h-100 align-items-center">
+                <div class="qs-mobile quienes-somos-contenido col-sm-8 col-lg-4 offset-2">
                     <h2>QUIENES SOMOS</h2>
-                    <hr>
+                    <hr class="hr-qs">
                     <p>GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de viajeros
                         entusiastas que deciden hacer de su pasión por conocer el mundo un modo de vida. Desde
                         nuestros
@@ -224,27 +225,31 @@
                         <button type="button" class="btn btn-dark descubrir">DESCUBRIR</button>
                     </div>
                 </div>
-            </section>
-
-            <!-- Versión Monitor -->
-            <section class="content-desktop">
-                <div class="content-qs-desktop quienes-somos-contenido col-sm-8 col-lg-4 offset-2">
-                    <h2>QUIENES SOMOS</h2>
-                    <hr>
-                    <p>GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de viajeros
-                        entusiastas que deciden hacer de su pasión por conocer el mundo un modo de vida. Desde
-                        nuestros
-                        inicios hemos diseñado más de 500 viajes organizadas a diferentes destinos de Europa,
-                        Norteamérica y
-                        Asia. Nuestro objetivo ahora es ir ampliando horizontes poco a poco.</p>
-                    <div class="row w-100 justify-content-center">
-                        <button type="button" class="btn btn-dark descubrir">DESCUBRIR</button>
-                    </div>
-                </div>
-            </section>
-
-        </div>
+            </div>
+        </section>
     </section>
+
+    <!-- Versión Monitor -->
+    <section class="content-desktop">
+        <section class="container-fluid quienes-somos-desktop">
+            <div class="row h-100 align-items-center">
+                <div class="qs-desktop quienes-somos-contenido col-sm-8 col-lg-4 offset-2">
+                    <h2>QUIENES SOMOS</h2>
+                    <hr class="hr-qs">
+                    <p>GeeksHubs Travels es una agencia de viajes online creada en 2009 por un equipo de viajeros
+                        entusiastas que deciden hacer de su pasión por conocer el mundo un modo de vida. Desde
+                        nuestros
+                        inicios hemos diseñado más de 500 viajes organizadas a diferentes destinos de Europa,
+                        Norteamérica y
+                        Asia. Nuestro objetivo ahora es ir ampliando horizontes poco a poco.</p>
+                    <div class="row w-100 justify-content-center">
+                        <button type="button" class="btn btn-dark descubrir">DESCUBRIR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
     <!-- SECCION DE CONTACTO -->
     <section
             class="row lineaContacto align-items-center justify-content-center flex-xl-row desktop-only">
@@ -290,7 +295,8 @@
                         <a class="pleaseComplete col-md-12">* PLEASE COMPLETE ALL FIELDS CORRECTLY </a>
                     </div>
                     <div class="row-button">
-                        <button type="submit" class="btn btn-warning col-md-4 col-sm-2 enviarMensaje"><i>Enviar mensaje</i>
+                        <button type="submit" class="btn btn-warning col-md-4 col-sm-2 enviarMensaje"><i>Enviar
+                            mensaje</i>
                         </button>
                     </div>
                 </form>

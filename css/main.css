@@ -276,7 +276,7 @@ html {
 }
 
 /* ==================== QUIENES SOMOS ==================== */
-.content-qs-mobile {
+.qs-mobile {
     background-color: white;
     padding: 5vh;
     min-height: 50vh;
@@ -284,21 +284,28 @@ html {
     margin: 0;
 }
 
-.content-qs-desktop {
+.qs-desktop {
     background-color: white;
     padding: 5vh;
     min-height: 50vh;
     min-width: 40%;
 }
 
-#quienes-somos {
+.quienes-somos-mobile {
+    width: 100vw;
+    height: 70vh;
+    background-color: #B1D2DE;
+    background-size: cover;
+}
+
+.quienes-somos-desktop {
     width: 100vw;
     height: 70vh;
     background-image: url("../img/travel_1.jpg");
     background-size: cover;
 }
 
-#quienes-somos .quienes-somos-contenido hr {
+.hr-qs {
     border-color: yellow;
 }
 
