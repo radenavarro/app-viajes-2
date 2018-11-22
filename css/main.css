@@ -457,15 +457,22 @@ footer {
 
 /*Estilos para monitores con ancho inferior a 1199px*/
 @media (max-width: 1199px) {
+    /* Menú desplegable*/
+    .desplegable{
+        position: absolute;
+        top:86px;
+    }
+    .desplegable a{
+        padding: 0.6em;
+    }
     .nav-menu a.nav-item {
-        background-color: rgba(0, 0, 0, 0.8);
         display: block;
-        width: 100%;
+        width: inherit;
     }
 
     .fondoDropdown {
-        margin-top: 4vh;
         background-color: rgba(0, 0, 0, 0.8);
+        width: 20vw;
         transition: all 0.3s;
     }
 
@@ -579,9 +586,23 @@ footer {
         flex-grow: 1;
     }
 
+    /* Menú desplegable*/
+    .desplegable{
+        right:0;
+    }
+
+    .nav-menu{
+        font-size: calc(0.5em + 1vw);
+    }
 }
 
 @media (max-width: 576px){
+    .nav-menu{
+        font-size: calc(0.7em + 1vw);
+    }
+    .fondoDropdown{
+        width: 40vw;
+    }
     #nav_hamburguesa{
         justify-content: flex-end !important;
     }
