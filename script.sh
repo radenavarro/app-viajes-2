@@ -27,9 +27,10 @@ mysql -uroot -p$DBPASSWD -e"grant all privileges on $DBNAME, * to '$DBUSER'@'%'i
 echo -e "\n --- Instalando Node, Npm ---\n"
 apt-get -y install nodejs && apt-get -y install nodejs-legacy && apt-get -y install npm
 
-npm i -g bower
+sudo npm i -g bower
 
-git clone https://github.com/ruldelnav/app-viajes-2.git
-# npm i
+echo -e "\n --- Descargando repositorio ---\n"
+sudo rm -rf /var/www/html
+sudo git clone https://github.com/ruldelnav/app-viajes-2.git
 bower install
-# npm start
+mv /home/vagrant/app-viajes-2 /var/www/html
