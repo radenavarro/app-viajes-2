@@ -32,5 +32,5 @@ sudo npm i -g bower
 echo -e "\n --- Descargando repositorio ---\n"
 sudo rm -rf /var/www/html
 sudo git clone https://github.com/ruldelnav/app-viajes-2.git
-bower install
+bower install -y --allow-root
 mv /home/vagrant/app-viajes-2 /var/www/html
