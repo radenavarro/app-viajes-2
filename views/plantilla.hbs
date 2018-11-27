@@ -4,59 +4,13 @@
     <meta charset="UTF-8">
     <title>Agencia de viajes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/stylesheets/main.css">
+    <link rel="stylesheet" href="../vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
 </head>
 <body>
 <div class="container-fluid p-0 m-0">
     <!-- ENCABEZADO -->
-    <header class="container-fluid">
-        <nav class="nav-menu">
-            <!-- NAVEGACIÓN -->
-            <div class="row background-menu fixed-top">
-                <!-- Logo -->
-                <div class="col-4">
-                    <div class="row background-logo">
-                        <div class="col-sm-6 offset-3 logo"></div>
-                    </div>
-                </div>
-                <!-- Links -->
-                <div class="col-4" id="contenedor_hamburguesa">
-                    <!-- Anclas -->
-                    <nav id="nav_hamburguesa"
-                         class="navbar navbar-expand-xl navbar-dark h-100 justify-content-sm-end justify-content-md-center">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon justify-content-center"></span>
-                        </button>
-                        <div class="desplegable justify-content-xl-around align-items-sm-end collapse navbar-collapse navbar-nav mr-auto"
-                             id="navbarSupportedContent">
-                            <div class="d-lg-block fondoDropdown">
-                                <a class="col-xl-3 nav-item text-center" href="#destinos"><em>Destinos</em></a>
-                                <a class="col-xl-6 nav-item text-center" href="#quienes-somos"><em>Quienes
-                                    somos</em></a>
-                                <a class="col-xl-3 nav-item text-center"
-                                   href="#cuadroMapa"><em>Contacto</em></a>
-                            </div>
-                        </div>
-                    </nav>
-
-                </div>
-                <!-- Social -->
-                <div class="col-2 offset-1 content-desktop p-0">
-                    <div class="row sprite-social h-100 align-items-center justify-content-center">
-                        <div class="iconos-social" id="iconoTwitter"></div>
-                        <div class="iconos-social" id="iconoWhatsapp"></div>
-                        <div class="iconos-social" id="iconoFacebook"></div>
-                        <div class="iconos-social" id="iconoInstagram"></div>
-                        <div class="iconos-social" id="iconoLinkedin"></div>
-                        <div class="iconos-social" id="iconoYoutube"></div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+    {{> navegacion}}
 
 
     <!-- Cabecera -->
@@ -304,62 +258,12 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="container-fluid ">
-        <div class="row seccionFooter">
-            <div class="d-sm-none d-md-block col-lg-1"></div>
-            <div class="col-md-4 col-sm-6">
-                <h3>¿Necesitas ayuda?</h3><br>
-                <a class="margenAyuda">0234 123 4567</a><br>
-                <a class="margenAyuda">enquiry@geekshubstravels.com</a><br>
-                <a class="horario">Lun-Vie: 9.30-19.00 Sab: 10.00-14.00</a>
-            </div>
-            <div class="col-md-3 col-sm-6 desktop-only">
-                <h3>Informacion</h3><br>
-                <a>Quienes somos</a><br>
-                <a>Preguntas frecuentes</a><br>
-                <a>Política de proactividad</a><br>
-                <a>Condiciones generales</a><br>
-                <a>Aviso legal</a><br>
-                <a>Contacto</a><br>
-                <a>Programa de puntos</a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <h3>Suscríbete a la newsletter</h3><br>
-                <input type="text" placeholder="Correo electrónico"><br><br>
-                <button type="button" class="btn btn-warning">SUSCRIBETE</button>
-            </div>
-        </div>
-        <section class="content-desktop">
-            <div class="row w-100 hide-section">
-                <hr class="w-100 barraFooter">
-            </div>
-            <div class="row w-100 derechosReservados">
-                <div class="col-sm-12 text-center">
-                    <a>GeeksHubs Travels 2018 todos los derechos reservados.</a>
-                </div>
-            </div>
-        </section>
-        <!-- Social -->
-
-        <section class="content-mobile">
-            <div class="col-6 social-footer content-mobile">
-                <div class="row sprite-social h-100 align-items-center justify-content-center">
-                    <div class="iconos-social iconoTwitter"></div>
-                    <div class="iconos-social iconoWhatsapp"></div>
-                    <div class="iconos-social iconoFacebook"></div>
-                    <div class="iconos-social iconoInstagram"></div>
-                    <div class="iconos-social iconoLinkedin"></div>
-                    <div class="iconos-social iconoYoutube"></div>
-                </div>
-            </div>
-        </section>
-
-    </footer>
+    {{> footer}}
 </div>
 
 <!-- Librerias: Bootstrap & Jquery -->
-<script src="vendors/jquery/dist/jquery.min.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/main.min.js/main.js"></script>
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/main.min.js/main.js"></script>
 </body>
 </html>

@@ -1,11 +1,10 @@
 {
-  "name": "actividad_1",
+  "name": "app-viajes-2",
   "version": "1.0.0",
   "description": "En Geekshubs Academy no podemos quedarnos quietos y hemos decidido ampliar nuestra área de negocio, con los viajes online\r Por ello nos hemos puesto en contacto con un diseñador y nos han pasado el siguiente diseño.\r ![alt text](https://github.com/GeeksHubsAcademy/Actividad_1/blob/master/Agencia%20de%20viajes%20Bootcamp.jpg)",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": ""
+    "start": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -18,9 +17,19 @@
   },
   "homepage": "https://github.com/Rauldel2/app-viajes-2#readme",
   "dependencies": {
+    "app-root-path": "^2.1.0",
     "browser-sync": "^2.26.3",
-    "express": "^4.16.4",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
     "gulp": "^3.9.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.7.0",
+    "nodemon": "^1.18.7",
+    "winston": "^3.1.0"
   }
 }
