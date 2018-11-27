@@ -12,9 +12,9 @@ gulp.task("default", ['browser', 'min']);
  * Task de minificar
  */
 gulp.task("min",()=>{
-    return gulp.src('js/main.js')
+    return gulp.src('public/javascripts/main.js')
         .pipe(uglify())
-        .pipe(gulp.dest('js/main.min.js'));
+        .pipe(gulp.dest('public/javascripts/main.min.js'));
 });
 
 /**
@@ -31,15 +31,15 @@ gulp.task("browser", ()=>{
 /**
  * Minifica tras cambios
  */
-gulp.watch("js/main.js").on("change", ()=>{
+gulp.watch("public/javascripts/main.js").on("change", ()=>{
     return gulp.src('js/main.js')
         .pipe(uglify())
-        .pipe(gulp.dest('js/main.min.js'));
+        .pipe(gulp.dest('javascripts/main.min.js'));
 });
 
 /**
  * Actualiza navegador tras cambios
  */
-gulp.watch(['index.html', 'js/main.js']).on('change', ()=>{
+gulp.watch(['index.html', 'public/javascripts/main.js']).on('change', ()=>{
     browserSync.reload();
 });

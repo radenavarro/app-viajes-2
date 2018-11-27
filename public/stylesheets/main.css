@@ -22,7 +22,7 @@ html {
 }
 
 .nav-menu .logo {
-    background-image: url("../img/iconoweb.png");
+    background-image: url("../images/iconoweb.png");
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 12vh;
@@ -67,7 +67,7 @@ html {
     width: 100vw;
     height: 70vh;
     min-height: 40vh;
-    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+    background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -98,62 +98,62 @@ html {
 }
 
 .sprite-social #iconoTwitter {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: 0 32px;
 }
 
 .sprite-social #iconoTwitter:hover {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: 0 0;
 }
 
 .sprite-social #iconoWhatsapp {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -32px 32px;
 }
 
 .sprite-social #iconoWhatsapp:hover {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -32px 0;
 }
 
 .sprite-social #iconoFacebook {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -64px 32px;
 }
 
 .sprite-social #iconoFacebook:hover {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -64px 0;
 }
 
 .sprite-social #iconoInstagram {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -96px 32px;
 }
 
 .sprite-social #iconoInstagram:hover {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -96px 0;
 }
 
 .sprite-social #iconoLinkedin {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -128px 32px;
 }
 
 .sprite-social #iconoLinkedin:hover {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -128px 0;
 }
 
 .sprite-social #iconoYoutube {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -160px 32px;
 }
 
 .sprite-social #iconoYoutube:hover {
-    background-image: url("../img/sprite_social.png");
+    background-image: url("../images/sprite_social.png");
     background-position: -160px 0;
 }
 
@@ -206,27 +206,27 @@ html {
 }
 
 #beijing {
-    background-image: url("../img/beijing.jpeg");
+    background-image: url("../images/beijing.jpeg");
 }
 
 #buenosaires {
-    background-image: url("../img/buenos_aires.jpeg");
+    background-image: url("../images/buenos_aires.jpeg");
 }
 
 #ciudadmexico {
-    background-image: url("../img/ciudad_mexico.jpeg");
+    background-image: url("../images/ciudad_mexico.jpeg");
 }
 
 #madrid {
-    background-image: url("../img/madrid.jpeg");
+    background-image: url("../images/madrid.jpeg");
 }
 
 #newyork {
-    background-image: url("../img/new_york.jpeg");
+    background-image: url("../images/new_york.jpeg");
 }
 
 #tokyo {
-    background-image: url("../img/tokyo.jpeg");
+    background-image: url("../images/tokyo.jpeg");
 }
 
 /*Version movil*/
@@ -301,7 +301,7 @@ html {
 .quienes-somos-desktop {
     width: 100vw;
     height: 70vh;
-    background-image: url("../img/travel_1.jpg");
+    background-image: url("../images/travel_1.jpg");
     background-size: cover;
 }
 
@@ -422,57 +422,57 @@ footer {
     }
 
     .sprite-social #iconoTwitter:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: 0 0;
     }
 
     .sprite-social #iconoWhatsapp {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -24px 24px;
     }
 
     .sprite-social #iconoWhatsapp:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -24px 0;
     }
 
     .sprite-social #iconoFacebook {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -48px 24px;
     }
 
     .sprite-social #iconoFacebook:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -48px 0;
     }
 
     .sprite-social #iconoInstagram {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -72px 24px;
     }
 
     .sprite-social #iconoInstagram:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -72px 0;
     }
 
     .sprite-social #iconoLinkedin {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -96px 24px;
     }
 
     .sprite-social #iconoLinkedin:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -96px 0;
     }
 
     .sprite-social #iconoYoutube {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -120px 24px;
     }
 
     .sprite-social #iconoYoutube:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -120px 0;
     }
 }
@@ -524,62 +524,62 @@ footer {
     }
 
     .sprite-social .iconoTwitter {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: 0 16px;
     }
 
     .sprite-social .iconoTwitter:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: 0 0;
     }
 
     .sprite-social .iconoWhatsapp {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -16px 16px;
     }
 
     .sprite-social .iconoWhatsapp:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -16px 0;
     }
 
     .sprite-social .iconoFacebook {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -32px 16px;
     }
 
     .sprite-social .iconoFacebook:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -32px 0;
     }
 
     .sprite-social .iconoInstagram {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -48px 16px;
     }
 
     .sprite-social .iconoInstagram:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -48px 0;
     }
 
     .sprite-social .iconoLinkedin {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -64px 16px;
     }
 
     .sprite-social .iconoLinkedin:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -64px 0;
     }
 
     .sprite-social .iconoYoutube {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -80px 16px;
     }
 
     .sprite-social .iconoYoutube:hover {
-        background-image: url("../img/sprite_social.png");
+        background-image: url("../images/sprite_social.png");
         background-position: -80px 0;
     }
 }
