@@ -4,7 +4,8 @@
   "description": "En Geekshubs Academy no podemos quedarnos quietos y hemos decidido ampliar nuestra área de negocio, con los viajes online\r Por ello nos hemos puesto en contacto con un diseñador y nos han pasado el siguiente diseño.\r ![alt text](https://github.com/GeeksHubsAcademy/Actividad_1/blob/master/Agencia%20de%20viajes%20Bootcamp.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
   },
   "repository": {
     "type": "git",
