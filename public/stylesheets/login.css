@@ -1,0 +1,487 @@
+/* ======================== GENERAL ======================== */
+/*Reseteo de márgenes y paddings del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reseteo de márgenes de la clase h-100 de Bootstrap */
+.h-100 {
+    margin: 0;
+}
+
+/*Scroll al hacer click en las anclas*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* ======================== PANTALLA MENÚ ======================== */
+
+.nav-menu {
+    font-size: calc(0.3em + 1vw);
+}
+
+.nav-menu .logo {
+    background-image: url("../images/iconoweb.png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 8vh;
+}
+
+/*Color de la barra de navegación (parte derecha)*/
+.nav-menu .background-menu {
+    background: url('../images/nathan-anderson-316188-unsplash.jpg') no-repeat;
+    height: 86px;
+}
+
+/*Degradado de la barra de navegación (parte izquierda, machaca el color anterior)*/
+.nav-menu .background-logo {
+    height: 86px;
+    color: white;
+}
+
+/*Efectos hover de links del menú*/
+.nav-menu, .background-menu a:link, .nav-menu, .background-menu a:visited {
+    color: white;
+    border: none;
+    transition: text-shadow 0.4s;
+}
+
+.nav-menu .background-menu a:hover, .nav-menu .background-menu a:active {
+    color: white;
+    border: none;
+    text-shadow: 0 0 0.2em #EA7B5D, 0 0 0.4em #EA7B5D, 0 0 0.8em #EA7B5D, 0 0 1.6em #EA7B5D;
+    text-decoration: none;
+    transition: text-shadow 0.4s;
+}
+
+/* Cabecera */
+.home {
+    padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-menu .logo {
+        margin-top: 20px;
+    }
+}
+
+/* Sprites */
+
+.iconos-social {
+    background-size: 192px;
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+}
+
+.sprite-social #iconoTwitter {
+    background-image: url("../images/sprite_social.png");
+    background-position: 0 32px;
+}
+
+.sprite-social #iconoTwitter:hover {
+    background-image: url("../images/sprite_social.png");
+    background-position: 0 0;
+}
+
+.sprite-social #iconoWhatsapp {
+    background-image: url("../images/sprite_social.png");
+    background-position: -32px 32px;
+}
+
+.sprite-social #iconoWhatsapp:hover {
+    background-image: url("../images/sprite_social.png");
+    background-position: -32px 0;
+}
+
+.sprite-social #iconoFacebook {
+    background-image: url("../images/sprite_social.png");
+    background-position: -64px 32px;
+}
+
+.sprite-social #iconoFacebook:hover {
+    background-image: url("../images/sprite_social.png");
+    background-position: -64px 0;
+}
+
+.sprite-social #iconoInstagram {
+    background-image: url("../images/sprite_social.png");
+    background-position: -96px 32px;
+}
+
+.sprite-social #iconoInstagram:hover {
+    background-image: url("../images/sprite_social.png");
+    background-position: -96px 0;
+}
+
+.sprite-social #iconoLinkedin {
+    background-image: url("../images/sprite_social.png");
+    background-position: -128px 32px;
+}
+
+.sprite-social #iconoLinkedin:hover {
+    background-image: url("../images/sprite_social.png");
+    background-position: -128px 0;
+}
+
+.sprite-social #iconoYoutube {
+    background-image: url("../images/sprite_social.png");
+    background-position: -160px 32px;
+}
+
+.sprite-social #iconoYoutube:hover {
+    background-image: url("../images/sprite_social.png");
+    background-position: -160px 0;
+}
+
+/* LOGIN */
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://ocem.com/wp-content/uploads/2017/11/night-flight-2307018_960_720.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: 200px;
+margin-bottom: 200px;
+width: 400px;
+background-color: white !important;
+opacity:0.8;
+}
+
+.card-header h3{
+color: black;
+text-align: center;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+.remember{
+color: black;
+}
+
+.remember input{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+margin-right: 35%;
+margin-left: 20%;
+}
+
+.login_btn:hover{
+color: black;
+background-color: #ffeb99;
+}
+
+.links{
+color: black;
+}
+
+.links a{
+margin-left: 4px;
+color: black;
+}
+.links a:hover{
+    color: blue;
+}
+
+/* FOOTER */
+footer {
+    background-color: #141939;
+    color: white;
+    position: absolute;
+    bottom: revert;
+}
+
+.horario {
+    font-size: xx-small;
+}
+
+.margenAyuda {
+    margin-left: 15px;
+}
+
+.barraFooter {
+    border-top: 1px solid black;
+}
+
+.derechosReservados {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.enviarMensaje {
+    background-color: #FEF200;
+    margin-top: -4vh;
+    margin-left: 50%;
+    font-size: 1.3vw;
+    color: black;
+    border-radius: 0;
+}
+
+.raya {
+    background-color: cornflowerblue;
+    height: 0.1vh;
+    margin-left: 15px;
+    width: 25px;
+}
+
+.btn-warning {
+    margin: 10px 0 0 0;
+}
+
+/* Versión movil */
+.social-footer {
+    padding: 0;
+    margin: 15px 0 15px 0;
+}
+
+@media (max-width: 1427px) {
+    /* Sprites */
+    .iconos-social {
+        background-size: 144px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .sprite-social #iconoTwitter {
+        background-position: 0 24px;
+    }
+
+    .sprite-social #iconoTwitter:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: 0 0;
+    }
+
+    .sprite-social #iconoWhatsapp {
+        background-image: url("../images/sprite_social.png");
+        background-position: -24px 24px;
+    }
+
+    .sprite-social #iconoWhatsapp:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -24px 0;
+    }
+
+    .sprite-social #iconoFacebook {
+        background-image: url("../images/sprite_social.png");
+        background-position: -48px 24px;
+    }
+
+    .sprite-social #iconoFacebook:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -48px 0;
+    }
+
+    .sprite-social #iconoInstagram {
+        background-image: url("../images/sprite_social.png");
+        background-position: -72px 24px;
+    }
+
+    .sprite-social #iconoInstagram:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -72px 0;
+    }
+
+    .sprite-social #iconoLinkedin {
+        background-image: url("../images/sprite_social.png");
+        background-position: -96px 24px;
+    }
+
+    .sprite-social #iconoLinkedin:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -96px 0;
+    }
+
+    .sprite-social #iconoYoutube {
+        background-image: url("../images/sprite_social.png");
+        background-position: -120px 24px;
+    }
+
+    .sprite-social #iconoYoutube:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -120px 0;
+    }
+}
+
+/*Estilos para monitores con ancho inferior a 1199px*/
+@media (max-width: 1199px) {
+    /* Menú desplegable*/
+    .desplegable{
+        position: absolute;
+        top:86px;
+    }
+    .desplegable a{
+        padding: 0.6em;
+    }
+    .nav-menu a.nav-item {
+        display: block;
+        width: inherit;
+    }
+
+    .fondoDropdown {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 20vw;
+        transition: all 0.3s;
+    }
+
+    .img-precio {
+        position: static;
+        max-width: unset;
+    }
+}
+
+/*Estilos para monitores con ancho inferior a 600px*/
+@media (max-width: 600px) {
+    /* ocultar en diseño movil */
+    .desktop-only {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+    }
+
+    /* Sprites */
+    .iconos-social {
+        background-size: 96px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .sprite-social .iconoTwitter {
+        background-image: url("../images/sprite_social.png");
+        background-position: 0 16px;
+    }
+
+    .sprite-social .iconoTwitter:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: 0 0;
+    }
+
+    .sprite-social .iconoWhatsapp {
+        background-image: url("../images/sprite_social.png");
+        background-position: -16px 16px;
+    }
+
+    .sprite-social .iconoWhatsapp:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -16px 0;
+    }
+
+    .sprite-social .iconoFacebook {
+        background-image: url("../images/sprite_social.png");
+        background-position: -32px 16px;
+    }
+
+    .sprite-social .iconoFacebook:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -32px 0;
+    }
+
+    .sprite-social .iconoInstagram {
+        background-image: url("../images/sprite_social.png");
+        background-position: -48px 16px;
+    }
+
+    .sprite-social .iconoInstagram:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -48px 0;
+    }
+
+    .sprite-social .iconoLinkedin {
+        background-image: url("../images/sprite_social.png");
+        background-position: -64px 16px;
+    }
+
+    .sprite-social .iconoLinkedin:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -64px 0;
+    }
+
+    .sprite-social .iconoYoutube {
+        background-image: url("../images/sprite_social.png");
+        background-position: -80px 16px;
+    }
+
+    .sprite-social .iconoYoutube:hover {
+        background-image: url("../images/sprite_social.png");
+        background-position: -80px 0;
+    }
+}
+
+/* Mostrar y ocultar contenido en monitores y dispositivos móviles*/
+.content-desktop {
+    display: block;
+}
+
+.content-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .content-desktop {
+        display: none;
+    }
+
+    .content-mobile {
+        display: block;
+    }
+
+    #contenedor_hamburguesa{
+        max-width: 100%;
+        flex-grow: 1;
+    }
+
+    /* Menú desplegable*/
+    .desplegable{
+        right:0;
+    }
+
+    .nav-menu{
+        font-size: calc(0.5em + 1vw);
+    }
+}
+
+@media (max-width: 576px){
+    .nav-menu{
+        font-size: calc(0.7em + 1vw);
+    }
+    .fondoDropdown{
+        width: 40vw;
+    }
+    #nav_hamburguesa{
+        justify-content: flex-end !important;
+    }
+}
