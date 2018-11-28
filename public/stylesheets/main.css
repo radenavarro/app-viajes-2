@@ -59,6 +59,10 @@ html {
     transition: text-shadow 0.4s;
 }
 
+.opcionesUser{
+    font-size: calc(0.3em + 0.6vw);
+}
+
 /* Cabecera */
 .home {
     padding: 0;
