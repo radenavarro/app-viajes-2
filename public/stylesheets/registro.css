@@ -60,6 +60,30 @@ html {
 .home {
     padding: 0;
 }
+.my-banner{
+    width: 100vw;
+    height: 70vh;
+    min-height: 40vh;
+    background-image: url("../img/nathan-anderson-316188-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cabecera > * {
+    color: white;
+}
+
+.cabecera h1 {
+    font-size: 4em;
+}
+
+.cabecera h3 {
+    font-weight: normal;
+}
+
+.cabecera button {
+    color: black;
+}
 
 @media screen and (max-width: 700px) {
     .nav-menu .logo {
@@ -140,77 +164,82 @@ html {
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://ocem.com/wp-content/uploads/2017/11/night-flight-2307018_960_720.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
+    background-image: url('https://ocem.com/wp-content/uploads/2017/11/night-flight-2307018_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
 }
 
 .container{
-height: 100%;
-align-content: center;
+    height: 100%;
+    align-content: center;
 }
 
 .card{
-height: 320px;
-margin-top: 200px;
-margin-bottom: 200px;
-width: 400px;
-background-color: white !important;
-opacity:0.8;
+    height: 420px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 400px;
+    background-color: white !important;
+    opacity:0.8;
+    }
+
+.card-header{
+    color: black;
+    text-align: center;
 }
 
-.card-header h3{
-color: black;
-text-align: center;
+.card-header a{
+    text-align: center;
+    color: black;
 }
 
 .input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
 }
 
 input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
 
 }
 .remember{
-color: black;
-font-size: .6em;
+    color: black;
+    font-size: .6em;
 }
 
 .remember input{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 
 .login_btn{
-color: black;
-background-color: #FFC312;
-width: 100px;
-margin-right: 35%;
-margin-left: 20%;
-margin-top: 5%;
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    margin-right: 35%;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 
 .login_btn:hover{
-color: black;
-background-color: #ffeb99;
+    color: black;
+    background-color: #ffeb99;
 }
 
 .links{
-color: black;
+    color: black;
 }
 
 .links a{
-margin-left: 4px;
-color: black;
+    margin-left: 4px;
+    color: black;
 }
 .links a:hover{
     color: blue;

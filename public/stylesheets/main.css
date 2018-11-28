@@ -25,7 +25,7 @@ html {
     background-image: url("../images/iconoweb.png");
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 12vh;
+    min-height: 8vh;
 }
 
 /*Color de la barra de navegación (parte derecha)*/
