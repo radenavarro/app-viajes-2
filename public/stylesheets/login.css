@@ -180,6 +180,7 @@ box-shadow: 0 0 0 0 !important;
 }
 .remember{
 color: black;
+font-size: .6em;
 }
 
 .remember input{
@@ -195,6 +196,7 @@ background-color: #FFC312;
 width: 100px;
 margin-right: 35%;
 margin-left: 20%;
+margin-top: 5%;
 }
 
 .login_btn:hover{
@@ -352,11 +354,6 @@ footer {
         background-color: rgba(0, 0, 0, 0.8);
         width: 20vw;
         transition: all 0.3s;
-    }
-
-    .img-precio {
-        position: static;
-        max-width: unset;
     }
 }
 
