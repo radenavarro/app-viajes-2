@@ -14,4 +14,13 @@ router.get('/registro', function(req, res, next) {
   res.render('registro.hbs', {titulo: 'REGISTRO'});
 });
 
+// Pagina de login
+router.get('/login', function (req, res, next) {
+   res.render('login');
+});
+
+// Pagina de registro
+router.get('/registro', function (req, res, next) {
+    res.render('registro');
+});
 module.exports = router;

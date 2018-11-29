@@ -59,13 +59,17 @@ html {
     transition: text-shadow 0.4s;
 }
 
+.opcionesUser{
+    font-size: calc(0.3em + 0.6vw);
+}
+
 /* Cabecera */
 .home {
     padding: 0;
 }
 .my-banner{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     min-height: 40vh;
     background-image: url("../images/nathan-anderson-316188-unsplash.jpg");
     background-size: cover;
@@ -300,7 +304,7 @@ html {
 
 .quienes-somos-desktop {
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     background-image: url("../images/travel_1.jpg");
     background-size: cover;
 }
@@ -407,8 +411,57 @@ footer {
     margin: 15px 0 15px 0;
 }
 
+/* ============= ERROR 404 ============== */
+/*Background*/
+#errorBG{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/err404.gif");
+    background-repeat:no-repeat;
+    background-position:bottom center;
+    font-family: 'Titillium Web', sans-serif;
+    color:#fff;
+    background-color:#1BCF00;
+}
 
-/* Estilos para monitores con ancho inferior a 1427px */
+/*Div error 404*/
+#error404{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(0,0,0,0.65);
+    min-height:100vh;
+    text-align:center;
+}
+
+#error404>h1{
+    font-size:20vw;
+    font-weight:700;
+}
+
+#error404>p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    font-size:5vw;
+    margin-bottom:0.6em;
+}
+
+#error404>a {
+    border-radius: 25px;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    text-decoration: none;
+}
+#error404>a:hover{
+     background:#fff;
+     color:#212121;
+}
+
+/* ============== Estilos para monitores con ancho inferior a 1427px ============================================ */
 @media (max-width: 1427px) {
     /* Sprites */
     .iconos-social {
@@ -478,7 +531,7 @@ footer {
 }
 
 /*Estilos para monitores con ancho inferior a 1199px*/
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     /* Menú desplegable*/
     .desplegable{
         position: absolute;
@@ -487,9 +540,14 @@ footer {
     .desplegable a{
         padding: 0.6em;
     }
-    .nav-menu a.nav-item {
+    .nav-menu a.nav-item, .opcionesUser a {
         display: block;
         width: inherit;
+    }
+
+    .opcionesUser a{
+        font-size: calc(0.3em + 1vw);
+        text-align: center;
     }
 
     .fondoDropdown {
