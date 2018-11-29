@@ -531,7 +531,7 @@ footer {
 }
 
 /*Estilos para monitores con ancho inferior a 1199px*/
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     /* Menú desplegable*/
     .desplegable{
         position: absolute;
@@ -540,9 +540,14 @@ footer {
     .desplegable a{
         padding: 0.6em;
     }
-    .nav-menu a.nav-item {
+    .nav-menu a.nav-item, .opcionesUser a {
         display: block;
         width: inherit;
+    }
+
+    .opcionesUser a{
+        font-size: calc(0.3em + 1vw);
+        text-align: center;
     }
 
     .fondoDropdown {
