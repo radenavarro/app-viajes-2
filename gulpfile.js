@@ -34,7 +34,7 @@ gulp.task("browser", ()=>{
 gulp.watch("public/javascripts/main.js").on("change", ()=>{
     return gulp.src('js/main.js')
         .pipe(uglify())
-        .pipe(gulp.dest('javascripts/main.min.js'));
+        .pipe(gulp.dest('public/javascripts/main.min.js'));
 });
 
 /**
