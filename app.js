@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs = require('hbs');
 var hbsUtils = require('hbs-utils')(hbs);
+var bodyParser = require('body-parser');
+
 // Habilitar partials
 hbsUtils.registerPartials(`${__dirname}/views/partials`);
 
@@ -26,6 +28,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

@@ -14,13 +14,10 @@ router.get('/registro', function(req, res, next) {
   res.render('registro.hbs', {titulo: 'REGISTRO'});
 });
 
-// Pagina de login
-router.get('/login', function (req, res, next) {
-   res.render('login');
+router.post('/registro', function (req, res, next) {
+    console.log(req.body.regInputPasswAgn);
+    // if (!req.body) return res.sendStatus(400)
+    // res.send(req);
 });
 
-// Pagina de registro
-router.get('/registro', function (req, res, next) {
-    res.render('registro');
-});
 module.exports = router;

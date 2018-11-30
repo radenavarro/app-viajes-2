@@ -6,7 +6,7 @@ var browserSync = require('browser-sync');
 /**
  * Tarea default, ejecuta browser y min solo escribiendo gulp en consola
  */
-gulp.task("default", ['browser', 'min']);
+gulp.task("default", ['browser','min']);
 
 /**
  * Task de minificar
