@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var ControlRegistro = require('../controladores/controlRegistro');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,7 +16,10 @@ router.get('/registro', function(req, res, next) {
 });
 
 router.post('/registro', function (req, res, next) {
-    console.log(req.body.regInputPasswAgn);
+    let insUser = new ControlRegistro(req, res, next);
+    // console.log(insUser);
+    insUser.validar();
+    // console.log(req.body.regInputPasswAgn);
     // if (!req.body) return res.sendStatus(400)
     // res.send(req);
 });
