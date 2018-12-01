@@ -9,10 +9,10 @@ class UserModel {
     insert(user) {
         return new Promise((res,rej)=>{
             if(!this.Conn) rej("No se ha podido crear la conexion");
-            let SQL = 'INSERT INTO usuario SET ?';
+            let SQL = 'INSERT INTO datouser SET ?';
             this.Conn.query(SQL, [user], (err,result)=>{
                 if(err) return rej(err);
-                else return res(result.id);
+                else return res(result);
             })
         })
     }
