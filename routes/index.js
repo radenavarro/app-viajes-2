@@ -19,9 +19,11 @@ router.post('/registro', function (req, res, next) {
     let insUser = new ControlRegistro(req, res, next);
     // console.log(insUser);
     insUser.validar();
-    // console.log(req.body.regInputPasswAgn);
-    // if (!req.body) return res.sendStatus(400)
-    // res.send(req);
+});
+
+router.get('/getPassw', function (req, res, next) {
+    // res.redirect('login');
+    res.render('login.hbs', {getPass: "SI"});
 });
 
 module.exports = router;

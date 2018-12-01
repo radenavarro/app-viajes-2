@@ -4,16 +4,5 @@ $(document).ready(function () {
 
     // =========== EVENTOS =============
 
-    btnRegEnviar.on('submit', function (ev) {
-        ev.preventDefault();
-        // Registro
-        let regInputPassw = $("#regInputPassw");//              Input contraseña
-        let regInputPasswAgn = $("#regInputPasswAgn");//        Input confirmar contraseña
-
-
-        if (regInputPassw.val() === regInputPasswAgn.val()){
-            window.location('/benis');
-        }
-    })
 
 });
