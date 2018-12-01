@@ -5,6 +5,9 @@
                 <div class="card-header">
                     <h3>REGISTRO</h3>
                     <a href="/login">¿Ya estas registrado?</a>
+                    {{#if errorPasswDistintos}}
+                        <div class="alert-danger">{{errorPasswDistintos}}</div>
+                    {{/if}}
                 </div>
                 <div class="card-body">
                     <form action="" method="post">

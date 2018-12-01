@@ -21,6 +21,10 @@ router.get('/registro', function(req, res, next) {
 router.post('/registro', function (req, res, next) {
   let registerController = new RegisterController(req,res,next);
   registerController.registro();
+    let insUser = new ControlRegistro(req, res, next);
+    // console.log(insUser);
+    insUser.validar();
+    // console.log(req.body.regInputPasswAgn);
     // if (!req.body) return res.sendStatus(400)
     // res.send(req);
 });
