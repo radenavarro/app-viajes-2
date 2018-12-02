@@ -11,6 +11,17 @@ class registerController extends Controller{
         this.res.render('registro', {title: "registro"});
     }
 
+    /**
+     * Método que saca por pantalla mensaje de error si las contraseñas no coinciden
+     */
+    validar() {
+        return (this.req.body.regInputPassw !== this.req.body.regInputPasswAgn);
+    }
+
+    muestraErrores(){
+        this.res.render('registro.hbs', {errorPasswDistintos: "Las contraseñas no coinciden"});
+    }
+
     async registro() {
         let user = {};
         user.password = EncryptService.encryptPass(this.req.body.regInputPassw);

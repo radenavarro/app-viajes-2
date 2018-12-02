@@ -7,6 +7,8 @@ var logger = require('morgan');
 var hbs = require('hbs');
 var hbsUtils = require('hbs-utils')(hbs);
 var bodyParser = require('body-parser');
+const Session = require('express-session');
+const Flash = require('connect-flash');
 
 // Habilitar partials
 hbsUtils.registerPartials(`${__dirname}/views/partials`);
@@ -33,6 +35,16 @@ app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+//Gestión de la sesión.
+app.use(Session({
+    secret: 'app',
+    name:'cookieapp',
+    resave: true,
+    saveUninitialized: true
+}));
+
+app.use(Flash());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

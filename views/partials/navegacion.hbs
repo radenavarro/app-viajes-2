@@ -27,10 +27,17 @@
                             <a class="col-xl-3 nav-item text-center"
                                href="#cuadroMapa"><em>Contacto</em></a>
                             <div class="col-xl-2">
+                                {{#unless username}}
                                 <div class="row flex-column opcionesUser">
                                     <a class="col-12" href="/login"><em>Login</em></a>
                                     <a class="col-12" href="/registro"><em>Registro</em></a>
                                 </div>
+                                {{/unless}}
+                                {{#if username}}
+                                    <div class="row flex-column opcionesUser">
+                                        <a href="/closeSession">{{username}}</a>
+                                    </div>
+                                {{/if}}
                             </div>
                         </div>
                     </div>
