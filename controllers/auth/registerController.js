@@ -15,7 +15,7 @@ class registerController extends Controller{
      * Método que saca por pantalla mensaje de error si las contraseñas no coinciden
      */
     validar() {
-        return (this.req.body.regInputPassw !== this.req.body.regInputPasswAgn);
+        return (this.req.body.regInputPassw === this.req.body.regInputPasswAgn);
     }
 
     muestraErrores(){

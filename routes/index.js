@@ -23,8 +23,11 @@ router.get('/registro', function(req, res, next) {
 router.post('/registro', function (req, res, next) {
     let registerController = new RegisterController(req,res,next);
     let isVal = registerController.validar();//    Valida que los 2 campos de contraseña sean iguales
-    if (isVal) registerController.registro();//    Registra el usuario
-    else registerController.muestraErrores();
+    if (isVal) {
+        registerController.registro();//    Registra el usuario
+    } else {
+        registerController.muestraErrores();
+    }
 });
 
 router.get('/getPassw', function (req, res, next) {

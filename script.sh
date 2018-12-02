@@ -1,7 +1,7 @@
 ### Archivo de scripts
 # Variables
 DBHOST=localhost
-DBNAME=viajes
+DBNAME=travels
 DBUSER=root
 DBPASSWD=root
 
@@ -32,5 +32,13 @@ sudo npm i -g bower
 echo -e "\n --- Descargando repositorio ---\n"
 sudo rm -rf /var/www/html
 sudo git clone https://github.com/ruldelnav/app-viajes-2.git
-bower install -y --allow-root
+sudo npm install
+bower install
 mv /home/vagrant/app-viajes-2 /var/www/html
+# service apache2 restart
+
+echo -e "\n---- Creando base de datos ----\n"
+# mysql -uroot -p <<< "$DBPASSWD" 
+# mysql -uroot -p$DBPASSWD travels < /home/vagrant/travels.sql
+sudo chmod 755 /var/lib/mysql
+sudo chmod 755 /var/lib/mysql/travels
