@@ -25,7 +25,9 @@ mysql -uroot -p$DBPASSWD -e"CREATE DATABASE $DBNAME" >> /vagrant/vm_mysql_p_buil
 mysql -uroot -p$DBPASSWD -e"grant all privileges on $DBNAME, * to '$DBUSER'@'%'identified by '$DBPASSWD'" >> /vagrant/vm_mysql_p_build
 
 echo -e "\n --- Instalando Node, Npm ---\n"
-apt-get -y install nodejs && apt-get -y install nodejs-legacy && apt-get -y install npm
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+sudo apt install nodejs -y
 
 sudo npm i -g bower
 
