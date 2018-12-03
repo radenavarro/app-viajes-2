@@ -26,6 +26,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 8vh;
+    cursor: pointer;
 }
 
 /*Color de la barra de navegación (parte derecha)*/
@@ -61,6 +62,7 @@ html {
 
 .opcionesUser{
     font-size: calc(0.3em + 0.6vw);
+    border-left: 1px solid gray;
 }
 
 /* Cabecera */

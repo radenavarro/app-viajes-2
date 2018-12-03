@@ -20,17 +20,20 @@
                     </button>
                     <div class="desplegable justify-content-xl-around align-items-sm-end collapse navbar-collapse navbar-nav mr-auto"
                          id="navbarSupportedContent">
-                        <div class="row fondoDropdown w-100">
-                            <a class="col-xl-3 nav-item text-center" href="#destinos"><em>Destinos</em></a>
-                            <a class="col-xl-4 nav-item text-center" href="#quienes-somos"><em>Quienes
-                                somos</em></a>
-                            <a class="col-xl-3 nav-item text-center"
-                               href="#cuadroMapa"><em>Contacto</em></a>
-                            <div class="col-xl-2">
-                                <div class="row flex-column opcionesUser">
-                                    <a class="col-12" href="/login"><em>Login</em></a>
-                                    <a class="col-12" href="/registro"><em>Registro</em></a>
-                                </div>
+                        <div class="row fondoDropdown w-100 justify-content-center">
+                            <a class="col-xl-3 nav-item text-center" href="/"><em>Inicio</em></a>
+                            <div class="col-xl-3">
+                                {{#unless username}}
+                                    <div class="row flex-column opcionesUser">
+                                        <a class="col-12" href="/login"><em>Login</em></a>
+                                        <a class="col-12" href="/registro"><em>Registro</em></a>
+                                    </div>
+                                {{/unless}}
+                                {{#if username}}
+                                    <div class="row flex-column opcionesUser">
+                                        <a href="/closeSession">{{username}}</a>
+                                    </div>
+                                {{/if}}
                             </div>
                         </div>
                     </div>

@@ -4,9 +4,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var hbs = require('hbs');
-var hbsUtils = require('hbs-utils')(hbs);
 var bodyParser = require('body-parser');
+const hbs = require('hbs');
+const hbsUtils = require('hbs-utils')(hbs);
 const Session = require('express-session');
 const Flash = require('connect-flash');
 
