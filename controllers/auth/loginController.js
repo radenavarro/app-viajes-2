@@ -22,26 +22,26 @@ class loginController extends Controller
         let pass = this.req.body.password;
         let userModel = new UserModel();
         try {
+            let errores = false;
             let user = await userModel.getUserByUserName(userName);
             if(user.length==0){
-                console.log("ccccccccccccccccccccccccc");
                 this.req.flash.error="El usuario no existe";
-                this.res.redirect('/login');
-            }
-            if (user[0].active == 0){
-                console.log("bbbbbbbbbbbbbb");
-                this.req.flash.error="El usuario no se encuentra activo";
+                errores = true;
                 this.res.redirect('/login');
             }
 
-            if(!EncryptService.comparePass(pass, user[0].pass)){
-                console.log("aaaaaaaaaaaaaaaaaaaaa");
+            if(!EncryptService.comparePass(pass, user[0].password)){
                 this.req.flash.error="El password es incorrecto";
+                errores = true;
                 this.res.redirect('/login');
             }
 
-            this.req.session.username= userName;
-            this.res.redirect('/');
+            if (!errores){
+                // console.log(userName);
+                this.req.session.username = userName;
+                console.log(this.req.session.username);
+                this.res.redirect('/');
+            }
 
         }catch(error){
             console.log(error);

@@ -3,10 +3,13 @@ var router = express.Router();
 const RegisterController = require('../controllers/auth/registerController');
 const SessionController = require('../controllers/auth/sessionController');
 const LoginController = require('../controllers/auth/loginController');
+const HomeController = require('../controllers/homeController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('plantilla.hbs', { titulo: 'Express' });
+    let homeCont = new HomeController(req, res, next);
+    homeCont.index();
+  // res.render('plantilla.hbs', { titulo: 'Express' });
 });
 
 // Ruta para acceder al login

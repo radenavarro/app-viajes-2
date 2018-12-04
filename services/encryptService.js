@@ -1,11 +1,11 @@
-const Bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 
 class encryptService {
     static encryptPass(pass){
-        return Bcrypt.hashSync(pass, 10);
+        return bcrypt.hashSync(pass, 10);
     }
     static comparePass(password, hash){
-        return Bcrypt.compareSync(password, hash);
+        return bcrypt.compareSync(password, hash);
     }
 }
 module.exports = encryptService;

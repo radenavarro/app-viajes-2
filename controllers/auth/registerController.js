@@ -12,7 +12,8 @@ class registerController extends Controller{
     }
 
     /**
-     * Método que saca por pantalla mensaje de error si las contraseñas no coinciden
+     * Método que valida que los campos de contraseña coincidan
+     * return boolean
      */
     validar() {
         return (this.req.body.regInputPassw === this.req.body.regInputPasswAgn);
@@ -24,16 +25,17 @@ class registerController extends Controller{
 
     async registro() {
         let user = {};
-        user.password = EncryptService.encryptPass(this.req.body.regInputPassw);
-        user['usuario'] = this.req.body.usuario;
+        user.usuario = this.req.body.usuario;
         user.email = this.req.body.email;
-        user.hash=UUidHelper.getUUid(3,4);
+        user.password = EncryptService.encryptPass(this.req.body.regInputPassw);
+        user.hash = UUidHelper.getUUid(3,4);
 
         try{
 
             let userModel = new UserModel();
-            let result = await userModel.insert(user);    
-            console.log(result.insertId);
+            let result = await userModel.insert(user);
+            this.res.redirect("/");
+            // console.log(result.insertId);
 
         } catch(error){
             console.log(error);
