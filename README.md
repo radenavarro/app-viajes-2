@@ -1,34 +1,37 @@
-# Actividad_1
-## 1º Actividad semanal Maquetación Web.
-En Geekshubs Academy no podemos quedarnos quietos y hemos decidido ampliar nuestra área de negocio, con los viajes online
-Por ello nos hemos puesto en contacto con un diseñador y nos han pasado el siguiente diseño.
-![alt text](https://github.com/GeeksHubsAcademy/Actividad_1/blob/master/Agencia%20de%20viajes%20Bootcamp.jpg)
+# Actividad_5
+### 5º Actividad semanal Gestionando las sesiones a nuestra web, y creando nuestro primer BackOffice.
+
+Hemos vistos que es un verdadero trabajo tener que añadir los viajes manualmente en el front, accediendo al código cada vez que tengamos un nuevo viaje, o al intentar modificar alguna de las condiciones del viaje. Para evitar esta situación se debe crear una backOffice donde un administrador pueda acceder y añadir nuevos viajes en tiempo de ejecución.
+
+Nuestra nueva página de administación sería muy similar a lo siguiente
+![alt_text](https://github.com/GeeksHubsAcademy/Actividad_5/blob/master/administrador.jpg)
+
+Esto nos plantea un nuevo problema y es controlar las sesiones para comprobar que sólo el usuario con permisos pueda acceder a dicha url de gestión de viajes.
 
 ---
-### Condiciones
-* Debe tratarse como una SPA Single Page Aplication
-* Debe tener los siguientes apartados:
-  * Header con Menú y logos de las redes sociales.
-  * Sección con los distintos viajes.
-    * Cada cuadrado debe tener: Imagen, titulo y precio (No debe ser exactamente igual que el del diseño)
-  * Sección de quienes somos
-  * Sección de contacto que tendrá los siguientes aparatados:
-    * Dispondrá de un formulario
-    * Dispondrá de un mapa de localización
-  * Dispondrá e un Footer igual al del diseño
+
+## Condiciones.
+* Crearemos una nueva vista que se llame Admin donde crearemos la funcionalidad suficiente para añadir los nuevos viajes y recuperar el listado de los existentes.
+* La Tabla se denominara travels y dispondrá de los siguientes campos:
+  * ID
+  * TRAVEL
+  * DESCRIPTION
+  * ACTIVE(true, false)
+  * PRICE
+  * TYPE (FAMILY, SINGLE, ADVENTURE, ETC)..
+* Debemos gestinar las sesiones de nuestros usuarios diferenciando tres tipos de usuarios:
+  *ANONIMO -> Tiene accesso: front, vista descripción viaje, error404, login, register.
+  *USER -> Tiene accesso: front, vista descripción viaje, error404, login, register.
+  *ADMIN ->Tiene accesso: front, vista descripción viaje, error404, login, register y además a la nueva vista que se denomine admin
+
 ---
-### Características
- * Debe utilizarse Bower para instalar las dependencias.
- * Debe utilizarse Git 
- > Importante debe existir commits por parte de los usuarios que conformar el equipo de trabajo.
- * Debemos tener un archivo .gitignore que no suba los paquetes que no son necesarios.
- * Debe utilizarse BootStrap y Jquery.
- * Se debe utilizar Gulp para ejecutar las siguientes tareas:
-    *Minificar js
-    *Minificar css
-    *Debe levantarnos un servidor local.
----
-### Fecha de Entrega.
-> La fecha tope de entrega: 12 de Marzo de 2018
-> Debe estar subido en los repositorios de los usuarios.
- 
+
+### Características.
+
+* Se utilizará NPM para la instalación de dependencias.
+* El proyecto debe estar subido en un contendor en vagrant, y debe cumplir las siguientes condiciones:
+  * Debe disponer de un vagrantfile y un archivo .sh donde se encuentren todos los scripts necesarios para construir el contenedor y nuestra aplicacion se autoejecute.
+  * El contendor debe tener abierto el puerto 80 y apuntara internamente al puerto 3000 donde tenemos apuntado nuestro servidor de node.js
+  * El contendor debe disponer un mysql instalado con la tabla descrita anteriormente.
+  * Dentro del package.json debemos disponer la tarea production debe llamar al módulo forever y arrancar la maquina.
+  * Debemos generar una nueva carpeta en nuestra estructura denominada log, donde se almacenará un log de los posibles errores que se produzcan en la aplicación.
