@@ -9,6 +9,14 @@ class mysqlConnection {
             database: 'viajes'
         })
     }
+    static  getConnectionAmpps(){
+        return Mysql.createConnection({
+            host: 'localhost',
+            user: 'root',
+            password: 'mysql',
+            database: 'viajes'
+        })
+    }
 }
 
 module.exports = mysqlConnection;

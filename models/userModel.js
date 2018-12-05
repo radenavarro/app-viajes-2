@@ -3,7 +3,11 @@ const MysqlConnection = require('../helpers/mysqlConnection');
 class UserModel {
     
     constructor(){
-        this.Conn = MysqlConnection.getConnection(); 
+        if (MysqlConnection.getConnection()){
+            this.Conn = MysqlConnection.getConnection();
+        } else{
+            this.Conn = MysqlConnection.getConnectionAmpps();
+        }
     }
 
     insert(user) {
