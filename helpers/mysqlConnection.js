@@ -6,7 +6,7 @@ class mysqlConnection {
             host: 'localhost',
             user: 'root',
             password: '',
-            database: 'travels'
+            database: 'viajes'
         })
     }
 }
