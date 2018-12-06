@@ -4,6 +4,7 @@ const RegisterController = require('../controllers/auth/registerController');
 const SessionController = require('../controllers/auth/sessionController');
 const LoginController = require('../controllers/auth/loginController');
 const HomeController = require('../controllers/homeController');
+const AdminController = require('../controllers/adminController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -53,7 +54,8 @@ router.get('/closeSession',(req, res ,next)=>{
 });
 
 router.get('/admin', (req, res, next) =>{
-    res.render('admin', {permiso: "insPermiso"});
+    let adminControl = new AdminController(req, res, next);
+    adminControl.checkSession();
 });
 
 module.exports = router;
