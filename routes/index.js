@@ -52,4 +52,8 @@ router.get('/closeSession',(req, res ,next)=>{
     return sessionController.closeSession();
 });
 
+router.get('/admin', (req, res, next) =>{
+    res.render('admin', {permiso: "insPermiso"});
+});
+
 module.exports = router;

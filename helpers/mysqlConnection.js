@@ -1,20 +1,13 @@
 const Mysql = require('mysql');
+const bdconfig = require('../config');
 
 class mysqlConnection {
     static getConnection(){
         return Mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: '',
-            database: 'viajes'
-        })
-    }
-    static  getConnectionAmpps(){
-        return Mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: 'mysql',
-            database: 'viajes'
+            host: bdconfig.mysql.host,
+            user: bdconfig.mysql.user,
+            password: bdconfig.mysql.password,
+            database: bdconfig.mysql.database
         })
     }
 }

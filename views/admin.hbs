@@ -1,7 +1,52 @@
-<div>
-    <h3>Bienvenido al área de administración</h3>
-    <p>Desde aquí podrás crear o gestionar viajes ya existentes</p>
-</div>
-<div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agencia de viajes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/admin.css">
+</head>
+<body class="p-0">
+<div class="container-fluid p-0 m-0">
+    <!-- ENCABEZADO -->
+    {{> navegacion}}
+    <div id="adminContainer">
+        <div>
+            <h3>Bienvenido al área de administración</h3>
+            <p>Desde aquí podrás crear o gestionar viajes ya existentes</p>
+        </div>
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Viaje</th>
+                    <th>Fechas</th>
+                    <th>Descripción</th>
+                    <th>Imagen</th>
+                    <th>Precio</th>
+                    <th>Activado</th>
+                    <th>Eliminar</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>sit</td>
+                    <td>amet</td>
+                    <td>consectetur</td>
+                    <td>adipisicing</td>
+                    <td>elit</td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-info">Añadir</button>
+        </div>
+    </div>
 
-</div>
+    {{> footer}}
+    {{> librerias}}
