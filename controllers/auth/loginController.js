@@ -11,7 +11,7 @@ class loginController extends Controller
 
     index(){
         if(this.req.flash.error){
-            return   this.res.render('login',{error: this.req.flash.error});
+            return this.res.render('login',{error: this.req.flash.error});
         }
         this.res.render('login',{title:"Login"});
     }

@@ -9,7 +9,7 @@ class adminController extends Controller{
     checkSession() {
         let loggedUser = this.req.session.username;
         if (loggedUser == undefined) this.res.redirect('/');
-        else (this.res.render('admin', {permiso: "insPermiso"}));
+        else (this.res.render('admin', {username: loggedUser, permiso: "insPermiso"}));
     }
 
 }
