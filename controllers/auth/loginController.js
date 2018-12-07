@@ -39,7 +39,8 @@ class loginController extends Controller
             if (!errores){
                 // console.log(userName);
                 this.req.session.username = userName;
-                console.log(this.req.session.username);
+                this.req.session.userId = user[0].id;
+                // console.log(this.req.session.username);
                 this.res.redirect('/');
             }
 
