@@ -12,8 +12,9 @@ class homeController extends Controller
                 title: 'Home',
                 username: this.req.session.username
             })
+        } else{
+            this.res.render('plantilla',{title:'Home'});
         }
-        this.res.render('plantilla',{title:'Home'});
     }
 }
 module.exports = homeController;

@@ -3,11 +3,7 @@ const MysqlConnection = require('../helpers/mysqlConnection');
 class UserModel {
     
     constructor(){
-        if (MysqlConnection.getConnection()){
-            this.Conn = MysqlConnection.getConnection();
-        } else{
-            this.Conn = MysqlConnection.getConnectionAmpps();
-        }
+        this.Conn = MysqlConnection.getConnection();
     }
 
     insert(user) {
@@ -39,6 +35,17 @@ class UserModel {
             this.Conn.query(SQL,(error, result)=>{
                 if(error) return rej(error);
                 else return res(result);
+            })
+        })
+    }
+
+    getAllTravels(){
+        return new Promise((res, rej)=>{
+            if (!this.Conn) rej("No se ha podido crear la conexión");
+            let SQL = 'SELECT * FROM travels';
+            this.Conn.query(SQL, (err, resul)=>{
+                if (err) return rej(err);
+                else return res(resul);
             })
         })
     }
