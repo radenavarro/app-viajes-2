@@ -1,3 +1,13 @@
 #adminContainer{
     margin-top: 86px;
 }
+
+#adminAnyadir{
+    background: #E5D1FF;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.6em;
+    box-sizing: border-box;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}

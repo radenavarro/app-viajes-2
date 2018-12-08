@@ -18,7 +18,7 @@
             <p>Desde aquí podrás crear o gestionar viajes ya existentes</p>
         </div>
         <div>
-            <table>
+            <table class="table">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -42,13 +42,52 @@
                             <td></td>
                             <td>{{this.price}}</td>
                             <td>{{this.active}}</td>
-                            <td></td>
+                            <td><a href="/eliminaviaje/{{this.id}}" class="linkEliminaViaje" id="viaje-{{this.id}}">Elimina</a></td>
                         </tr>
                     {{/each}}
                 {{/if}}
                 </tbody>
             </table>
-            <button class="btn btn-info">Añadir</button>
+            <form action="/insviaje" method="post" id="adminAnyadir">
+
+                <div class="row">
+                    <div class="col-3 flex-column">
+                        <label for="travel" class="d-block">Viaje</label>
+                        <input type="text" name="travel" class="w-100">
+                    </div>
+
+                    <div class="col-4 flex-column">
+
+                        <label for="description" class="d-block">Descripción</label>
+                        <input type="text" name="description" class="w-100">
+
+                    </div>
+
+                    <div class="col-2 flex-column">
+
+                        <label for="price" class="d-block">Precio</label>
+                        <input type="text" name="price" class="w-100">
+
+                    </div>
+
+                    <div class="col-1 flex-column">
+
+                        <label for="active" class="d-block">Activo</label>
+                        <input type="checkbox" name="active" class="checkbox">
+
+                    </div>
+
+                    <div class="col-2 flex-column">
+
+                        <label for="type" class="d-block">Tipo</label>
+                        <input type="text" name="type" class="w-100">
+
+                    </div>
+                </div>
+
+                <input type="submit" class="btn btn-info" value="Añadir" />
+            </form>
+
         </div>
     </div>
 

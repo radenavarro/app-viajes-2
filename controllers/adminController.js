@@ -1,5 +1,6 @@
 const Controller = require('./controller');
 const UserModel = require('../models/userModel');
+const TravelModel = require('../models/travelModel');
 
 class adminController extends Controller{
     constructor(req, res, next){
@@ -29,6 +30,37 @@ class adminController extends Controller{
                 permiso: userGrants,
                 rowTravels: htmlTravels
             });
+        }
+    }
+
+    async addTravel(){
+        try {
+            let travelModel = new TravelModel();
+            let newTravel = [
+                this.req.body.travel,
+                this.req.body.description,
+                this.req.body.price,
+                this.req.body.type
+            ];
+            console.log(this.req.body.travel);
+            let result = await travelModel.insert(newTravel);
+            this.res.redirect('/admin');
+
+        } catch(err){
+            console.log(err);
+        }
+
+    }
+
+    async removeTravel(){
+        let idViaje = this.req.params.id;
+        try {
+            let tmodel = new TravelModel();
+            await tmodel.delete(idViaje);
+            this.res.redirect('/admin');
+
+        } catch (e) {
+            console.log(e);
         }
     }
 

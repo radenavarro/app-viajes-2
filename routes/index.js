@@ -52,4 +52,15 @@ router.get('/admin', (req, res, next) =>{
     adminControl.checkSession();
 });
 
+router.post('/insviaje', (req, res, next) => {
+    let adminControl = new AdminController(req, res, next);
+    adminControl.addTravel();
+});
+
+router.get('/eliminaviaje/:id', (req, res, next) =>{
+    let adminControl = new AdminController(req, res, next);
+    adminControl.removeTravel();
+    // console.log(req.params.id);
+});
+
 module.exports = router;
