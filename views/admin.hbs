@@ -39,7 +39,11 @@
                             <td>{{this.travel}}</td>
                             <td></td>
                             <td>{{this.description}}</td>
-                            <td></td>
+                            <td>
+                                <form action="/multer/upload/{{this.id}}" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="file"/><input type="submit" name="subeImg" value="Subir">
+                                </form>
+                            </td>
                             <td>{{this.price}}</td>
                             <td>{{this.active}}</td>
                             <td><a href="/eliminaviaje/{{this.id}}" class="linkEliminaViaje" id="viaje-{{this.id}}">Elimina</a></td>

@@ -9,6 +9,7 @@ const hbs = require('hbs');
 const hbsUtils = require('hbs-utils')(hbs);
 const Session = require('express-session');
 const Flash = require('connect-flash');
+const Multer = require('multer');
 
 // Habilitar partials
 hbsUtils.registerPartials(`${__dirname}/views/partials`);
@@ -43,6 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use('/multer', require('./routes/multer'));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
