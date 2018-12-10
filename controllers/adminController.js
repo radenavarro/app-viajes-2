@@ -17,14 +17,18 @@ class adminController extends Controller{
         // TODO: Separar la validación en un método aparte
         let loggedUser = this.req.session.username;
         let model = new UserModel();
+
+        // Si existe sesión de usuario, saca sus permisos
         let userGrants = this.req.session.userId ? await(model.getUserGrants(this.req.session.userId)) : 0;
 
+        // Permisos = 1 -> visitante; Permisos = 2 -> usuario; Permisos = 3 -> admin
         if (loggedUser == undefined || userGrants[0].permisos != 3){
+            // Redirige a home si no es admin
             this.res.redirect('/');
         } else {
+            // Extrae todos los viajes de la base de datos si es admin
             let htmlTravels = await (model.getAllTravels());
 
-            console.log(userGrants);
             this.res.render('admin', {
                 username: loggedUser,
                 permiso: userGrants,

@@ -11,3 +11,8 @@
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
 }
+
+#insViajeAnyadir{
+    display: block;
+    margin: 1em auto 0 auto;
+}
