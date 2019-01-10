@@ -20,27 +20,32 @@ class loginController extends Controller
     {
         let userName = this.req.body.username;
         let pass = this.req.body.password;
-        let userModel = new UserModel();
+        // let userModel = new UserModel();
         try {
             let errores = false;
-            let user = await userModel.getUserByUserName(userName);
-            if(user.length==0){
+            let user;
+
+            if (userName.indexOf("@") !== -1){
+                user = await UserModel.findOne({where : {email : userName}});
+            } else{
+                user = await UserModel.findOne({where : {usuario : userName}});
+            }
+
+            if(user.length<=0){
                 this.req.flash.error="El usuario no existe";
                 errores = true;
                 this.res.redirect('/login');
             }
 
-            if(!EncryptService.comparePass(pass, user[0].password)){
+            if(!EncryptService.comparePass(pass, user.password)){
                 this.req.flash.error="El password es incorrecto";
                 errores = true;
                 this.res.redirect('/login');
             }
 
             if (!errores){
-                // console.log(userName);
-                this.req.session.username = userName;
-                this.req.session.userId = user[0].id;
-                // console.log(this.req.session.username);
+                this.req.session.username = user.usuario;
+                this.req.session.userId = user.id;
                 this.res.redirect('/');
             }
 

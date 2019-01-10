@@ -16,18 +16,19 @@ class adminController extends Controller{
     async checkSession() {
         // TODO: Separar la validación en un método aparte
         let loggedUser = this.req.session.username;
-        let model = new UserModel();
+        // let model = new UserModel();
 
         // Si existe sesión de usuario, saca sus permisos
-        let userGrants = this.req.session.userId ? await(model.getUserGrants(this.req.session.userId)) : 0;
+        // let userGrants = this.req.session.userId ? await(model.getUserGrants(this.req.session.userId)) : 0;
+        let userGrants = this.req.session.userId ? await(UserModel.findById(this.req.session.userId)) : 0;
 
         // Permisos = 1 -> visitante; Permisos = 2 -> usuario; Permisos = 3 -> admin
-        if (loggedUser == undefined || userGrants[0].permisos != 3){
+        if (loggedUser == undefined || userGrants.permisos != 3){
             // Redirige a home si no es admin
             this.res.redirect('/');
         } else {
             // Extrae todos los viajes de la base de datos si es admin
-            let htmlTravels = await (model.getAllTravels());
+            let htmlTravels = await (TravelModel.findAll());
 
             this.res.render('admin', {
                 username: loggedUser,
@@ -39,15 +40,13 @@ class adminController extends Controller{
 
     async addTravel(){
         try {
-            let travelModel = new TravelModel();
-            let newTravel = [
-                this.req.body.travel,
-                this.req.body.description,
-                this.req.body.price,
-                this.req.body.type
-            ];
-            console.log(this.req.body.travel);
-            let result = await travelModel.insert(newTravel);
+            let newTravel = {
+                travel: this.req.body.travel,
+                description: this.req.body.description,
+                price: this.req.body.price,
+                type: this.req.body.type
+            };
+            let result = await TravelModel.create(newTravel);
             this.res.redirect('/admin');
 
         } catch(err){
@@ -59,8 +58,7 @@ class adminController extends Controller{
     async removeTravel(){
         let idViaje = this.req.params.id;
         try {
-            let tmodel = new TravelModel();
-            await tmodel.delete(idViaje);
+            await TravelModel.destroy({where : {id: idViaje}});
             this.res.redirect('/admin');
 
         } catch (e) {

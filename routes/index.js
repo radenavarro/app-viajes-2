@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const Passport = require('passport');
 const RegisterController = require('../controllers/auth/registerController');
 const SessionController = require('../controllers/auth/sessionController');
 const LoginController = require('../controllers/auth/loginController');
@@ -37,7 +38,13 @@ router.get('/login',(req, res ,next)=>{
     return loginController.index();
 });
 
-router.post('/login',(req, res, next)=>{
+// Passport.authenticate('local',
+//     {
+//         successRedirect: '/',
+//         failureRedirect: '/login'
+//     }),
+
+    router.post('/login', (req, res, next)=>{
     let loginController = new LoginController(req, res ,next);
     return loginController.login();
 });
