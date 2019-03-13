@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const Passport = require('passport');
+const Passport = require('../config/passport');
 const RegisterController = require('../controllers/auth/registerController');
 const SessionController = require('../controllers/auth/sessionController');
 const LoginController = require('../controllers/auth/loginController');
@@ -44,9 +44,14 @@ router.get('/login',(req, res ,next)=>{
 //         failureRedirect: '/login'
 //     }),
 
-    router.post('/login', (req, res, next)=>{
-    let loginController = new LoginController(req, res ,next);
-    return loginController.login();
+router.post('/login', Passport.authenticate('local', {
+        successRedirect: '/',
+        failureRedirect: '/login',
+        failureFlash: true
+    }) ,(req, res, next)=>{
+    console.log("asdadsadsadsadsadadasdsadasdsadasda");
+    // let loginController = new LoginController(req, res ,next);
+    // return loginController.login();
 });
 
 router.get('/closeSession',(req, res ,next)=>{
