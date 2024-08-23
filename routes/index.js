@@ -49,7 +49,6 @@ router.post('/login', Passport.authenticate('local', {
         failureRedirect: '/login',
         failureFlash: true
     }) ,(req, res, next)=>{
-    console.log("asdadsadsadsadsadadasdsadasdsadasda");
     // let loginController = new LoginController(req, res ,next);
     // return loginController.login();
 });
